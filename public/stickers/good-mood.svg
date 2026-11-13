@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 200" width="170" height="200">
+  <!-- Outer Die Cut Shield -->
+  <path d="M85,12 C130,12 155,25 155,75 C155,135 110,175 85,190 C60,175 15,135 15,75 C15,25 40,12 85,12 Z"
+    fill="#FFFFFF" stroke="#1A1A1A" stroke-width="8" stroke-linejoin="round" />
+  <!-- Inner Shield -->
+  <path d="M85,22 C122,22 143,33 143,76 C143,128 105,164 85,177 C65,164 27,128 27,76 C27,33 48,22 85,22 Z"
+    fill="#FF6B1A" stroke="#1A1A1A" stroke-width="4" stroke-linejoin="round" />
+  <!-- Top Arch Banner -->
+  <path d="M40,78 Q85,55 130,78" stroke="#1A1A1A" stroke-width="4" fill="none" stroke-linecap="round" />
+  <text x="85" y="70" font-family="'Archivo Black', sans-serif" font-size="18" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">GOOD</text>
+  
+  <!-- Central Smile / Icon -->
+  <circle cx="85" cy="115" r="28" fill="#C6FF3D" stroke="#1A1A1A" stroke-width="4" />
+  <!-- Eyes -->
+  <circle cx="75" cy="110" r="4.5" fill="#1A1A1A" />
+  <circle cx="95" cy="110" r="4.5" fill="#1A1A1A" />
+  <!-- Smile -->
+  <path d="M74,122 Q85,134 96,122" stroke="#1A1A1A" stroke-width="3.5" fill="none" stroke-linecap="round" />
+  <!-- Cheek dots -->
+  <circle cx="68" cy="118" r="2.5" fill="#FF6B1A" />
+  <circle cx="102" cy="118" r="2.5" fill="#FF6B1A" />
+
+  <text x="85" y="163" font-family="'Archivo Black', sans-serif" font-size="16" fill="#1A1A1A" text-anchor="middle" letter-spacing="1">MOOD</text>
+</svg>
+

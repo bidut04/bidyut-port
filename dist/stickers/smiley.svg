@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <!-- Motion streaks -->
+  <path d="M10,65 C5,75 5,85 10,95" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" fill="none" />
+  <path d="M150,65 C155,75 155,85 150,95" stroke="#1A1A1A" stroke-width="3" stroke-linecap="round" fill="none" />
+
+  <!-- Outer Die-Cut Circle -->
+  <circle cx="80" cy="80" r="66" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="8" />
+  <circle cx="80" cy="80" r="58" fill="#FF6B1A" stroke="#1A1A1A" stroke-width="4" />
+
+  <!-- 70s Rubber Hose Style Eyes -->
+  <g transform="translate(0, 0)">
+    <ellipse cx="62" cy="68" rx="10" ry="16" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5" />
+    <circle cx="64" cy="68" r="7" fill="#1A1A1A" />
+    <circle cx="61" cy="64" r="2.5" fill="#FFFFFF" />
+
+    <ellipse cx="98" cy="68" rx="10" ry="16" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="2.5" />
+    <circle cx="96" cy="68" r="7" fill="#1A1A1A" />
+    <circle cx="93" cy="64" r="2.5" fill="#FFFFFF" />
+  </g>
+
+  <!-- Big joyful mouth with tongue -->
+  <path d="M52,90 Q80,122 108,90 Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="3" />
+  <path d="M68,102 Q80,94 92,102 Q80,118 68,102 Z" fill="#C6FF3D" />
+
+  <!-- Cheeks -->
+  <circle cx="48" cy="86" r="6" fill="#1F4BFF" />
+  <circle cx="112" cy="86" r="6" fill="#1F4BFF" />
+</svg>
+

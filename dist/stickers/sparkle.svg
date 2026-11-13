@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160">
+  <!-- Big 4-point sparkle in neon lime & blue -->
+  <g transform="translate(10, 10)">
+    <!-- White border -->
+    <path d="M70,5 Q70,70 5,70 Q70,70 70,135 Q70,70 135,70 Q70,70 70,5 Z"
+      fill="#FFFFFF" stroke="#1A1A1A" stroke-width="8" stroke-linejoin="round" />
+    <path d="M70,12 Q70,70 12,70 Q70,70 70,128 Q70,70 128,70 Q70,70 70,12 Z"
+      fill="#C6FF3D" stroke="#1A1A1A" stroke-width="3" stroke-linejoin="round" />
+    <!-- Center gem / dot -->
+    <circle cx="70" cy="70" r="10" fill="#1F4BFF" stroke="#1A1A1A" stroke-width="2.5" />
+    <circle cx="67" cy="67" r="3" fill="#FFFFFF" />
+  </g>
+  <!-- Mini secondary sparkle in orange -->
+  <g transform="translate(105, 10)">
+    <path d="M20,5 Q20,20 5,20 Q20,20 20,35 Q20,20 35,20 Q20,20 20,5 Z"
+      fill="#FF6B1A" stroke="#1A1A1A" stroke-width="2.5" stroke-linejoin="round" />
+  </g>
+</svg>
+

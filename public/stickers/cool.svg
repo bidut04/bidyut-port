@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 110" width="180" height="110">
+  <!-- Motion streaks -->
+  <path d="M12,40 L26,40 M8,55 L22,55 M14,70 L28,70" stroke="#1A1A1A" stroke-width="4" stroke-linecap="round" />
+  <!-- White Die-cut Border -->
+  <g transform="rotate(-5 90 55)">
+    <rect x="25" y="15" width="135" height="75" rx="37.5" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="7" />
+    <rect x="31" y="21" width="123" height="63" rx="31.5" fill="#1F4BFF" stroke="#1A1A1A" stroke-width="3" />
+    <!-- Yellow/Orange star -->
+    <path d="M42,52 Q47,52 47,47 Q47,52 52,52 Q47,52 47,57 Q47,52 42,52 Z" fill="#C6FF3D" />
+    <!-- COOL text -->
+    <text x="96" y="63" font-family="'Archivo Black', sans-serif" font-size="34" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="3" stroke="#1A1A1A" stroke-width="2">COOL</text>
+    <!-- Little sunglasses or accent dots -->
+    <circle cx="138" cy="35" r="4" fill="#FF6B1A" stroke="#1A1A1A" stroke-width="2" />
+    <circle cx="145" cy="45" r="3" fill="#C6FF3D" stroke="#1A1A1A" stroke-width="1.5" />
+  </g>
+</svg>
+

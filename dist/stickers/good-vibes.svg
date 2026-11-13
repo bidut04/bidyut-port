@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <filter id="sticker-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="3" dy="4" stdDeviation="0" flood-color="#1A1A1A" flood-opacity="0.85" />
+    </filter>
+  </defs>
+  <!-- White Die-cut Border -->
+  <polygon points="100,10 119,45 158,35 155,75 190,92 168,125 185,160 146,162 133,200 100,178 67,200 54,162 15,160 32,125 10,92 45,75 42,35 81,45"
+    fill="#FFFFFF" stroke="#1A1A1A" stroke-width="8" stroke-linejoin="round" />
+  <!-- Neon Lime Inner Starburst -->
+  <polygon points="100,20 116,50 148,42 145,76 175,92 156,120 170,148 138,150 127,180 100,163 73,180 62,150 30,148 44,120 25,92 55,76 52,42 84,50"
+    fill="#C6FF3D" stroke="#1A1A1A" stroke-width="4" stroke-linejoin="round" />
+  <!-- Text GOOD VIBES -->
+  <g transform="rotate(-6 100 100)" text-anchor="middle">
+    <text x="100" y="92" font-family="'Archivo Black', sans-serif" font-weight="900" font-size="24" fill="#1A1A1A" letter-spacing="1">GOOD</text>
+    <text x="100" y="122" font-family="'Archivo Black', sans-serif" font-weight="900" font-size="28" fill="#1F4BFF" stroke="#1A1A1A" stroke-width="1.5" letter-spacing="1.5">VIBES</text>
+    <!-- Little 4-pt sparkles -->
+    <path d="M60,65 Q60,75 50,75 Q60,75 60,85 Q60,75 70,75 Q60,75 60,65 Z" fill="#FF6B1A" stroke="#1A1A1A" stroke-width="1.5" />
+    <path d="M140,125 Q140,135 130,135 Q140,135 140,145 Q140,135 150,135 Q140,135 140,125 Z" fill="#FF6B1A" stroke="#1A1A1A" stroke-width="1.5" />
+  </g>
+</svg>
+

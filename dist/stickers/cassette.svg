@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 150" width="220" height="150">
+  <!-- Outer Die-Cut Body -->
+  <rect x="10" y="10" width="200" height="130" rx="16" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="8" />
+  <rect x="16" y="16" width="188" height="118" rx="12" fill="#1F4BFF" stroke="#1A1A1A" stroke-width="4" />
+
+  <!-- Label Area -->
+  <rect x="28" y="26" width="164" height="68" rx="8" fill="#F1EFEA" stroke="#1A1A1A" stroke-width="3" />
+  
+  <!-- Orange Stripe on Label -->
+  <rect x="28" y="32" width="164" height="12" fill="#FF6B1A" />
+  <text x="110" y="42" font-family="'Archivo Black', sans-serif" font-size="9" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">MIX TAPE 90'S</text>
+
+  <!-- Cassette Window -->
+  <rect x="52" y="52" width="116" height="34" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3" />
+  
+  <!-- Left Spool -->
+  <circle cx="76" cy="69" r="12" fill="#C6FF3D" stroke="#1A1A1A" stroke-width="3" />
+  <circle cx="76" cy="69" r="4" fill="#1A1A1A" />
+  <!-- Spool teeth -->
+  <line x1="72" y1="69" x2="80" y2="69" stroke="#1A1A1A" stroke-width="2" />
+  <line x1="76" y1="65" x2="76" y2="73" stroke="#1A1A1A" stroke-width="2" />
+
+  <!-- Right Spool -->
+  <circle cx="144" cy="69" r="12" fill="#C6FF3D" stroke="#1A1A1A" stroke-width="3" />
+  <circle cx="144" cy="69" r="4" fill="#1A1A1A" />
+  <line x1="140" y1="69" x2="148" y2="69" stroke="#1A1A1A" stroke-width="2" />
+  <line x1="144" y1="65" x2="144" y2="73" stroke="#1A1A1A" stroke-width="2" />
+
+  <!-- Tape bridge line -->
+  <line x1="88" y1="69" x2="132" y2="69" stroke="#1A1A1A" stroke-width="2" />
+
+  <!-- Bottom trapezoid head opening -->
+  <polygon points="45,126 62,98 158,98 175,126" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="3" />
+  <circle cx="75" cy="112" r="4" fill="#FF6B1A" />
+  <circle cx="145" cy="112" r="4" fill="#FF6B1A" />
+  <rect x="98" y="106" width="24" height="10" rx="2" fill="#1A1A1A" />
+</svg>
+
