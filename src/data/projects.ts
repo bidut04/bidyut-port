@@ -91,20 +91,23 @@ export const projectsData: Project[] = [
     githubUrl: 'https://github.com/bidut04'
   },
   {
-    id: 'warner-bros',
+    id: 'solarnext-energy',
     number: '05',
-    title: 'Warner Bros',
-    category: 'Set of prints for WB',
-    description: 'Official commemorative merchandise illustrations featuring classic character licensing. Modernized retro rubber-hose aesthetics blended with vibrant balloons, dynamic clouds, and vintage comic lettering.',
-    thumbnail: '/images/projects/project-04.jpg',
+    title: 'SolarNext Energy',
+    category: 'CleanTech & Energy Engineering Platform',
+    description: 'A modern clean-energy web platform engineered for solar power installations, smart telemetry monitoring, and savings estimation. Features real-time plant telemetry metrics, interactive solar ROI calculators, instant consultation booking, and commercial project showcases.',
+    thumbnail: '/images/projects/project-solarnext.jpg',
     gallery: [
-      '/images/projects/project-04.jpg',
-      '/stickers/controller.svg',
-      '/stickers/lightning.svg'
+      '/images/projects/project-solarnext.jpg',
+      '/stickers/lightning.svg',
+      '/stickers/sparkle.svg',
+      '/stickers/good-mood.svg'
     ],
-    tools: ['Clip Studio Paint', 'Illustrator', 'Vector Art'],
-    year: '2023',
-    client: 'Warner Bros. Consumer Products'
+    tools: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Vercel'],
+    year: '2024',
+    client: 'SolarNext Engineering',
+    liveUrl: 'https://soler-energy-two.vercel.app/',
+    githubUrl: 'https://github.com/bidut04'
   },
   {
     id: 'upwork',
