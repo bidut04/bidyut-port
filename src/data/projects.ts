@@ -53,20 +53,23 @@ export const projectsData: Project[] = [
     githubUrl: 'https://github.com/bidut04'
   },
   {
-    id: 'poster-design',
+    id: 'agomoni-sangha',
     number: '03',
-    title: 'Poster Design',
-    category: 'Few of my favourite posters',
-    description: 'An editorial series of 70s-inspired risograph and screen-printed posters exploring vintage cocktail culture, mood typography, and brutalist printed paper collages with heavy ink textures and tactile grain.',
-    thumbnail: '/images/projects/project-02.jpg',
+    title: 'Agomoni Sangha',
+    category: 'Cultural Festival & Event Platform',
+    description: 'A vibrant, culturally rich web portal dedicated to Bengal\'s grandest festival, Durga Puja. Features real-time countdown clocks, festival schedules, pandal discovery, cultural competition registrations, online donation (Chanda) integration, and an embedded devotional theme music player.',
+    thumbnail: '/images/projects/project-agomoni.jpg',
     gallery: [
-      '/images/projects/project-02.jpg',
-      '/stickers/cool.svg',
-      '/stickers/smiley.svg'
+      '/images/projects/project-agomoni.jpg',
+      '/stickers/sparkle.svg',
+      '/stickers/good-vibes.svg',
+      '/stickers/cool.svg'
     ],
-    tools: ['InDesign', 'Photoshop', 'Screen Printing'],
+    tools: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Vercel'],
     year: '2024',
-    client: 'Studio Aperol & Personal Works'
+    client: 'Agomoni Sangha Cultural Club',
+    liveUrl: 'https://agomoni-nine.vercel.app/',
+    githubUrl: 'https://github.com/bidut04'
   },
   {
     id: '3d-artworks',
