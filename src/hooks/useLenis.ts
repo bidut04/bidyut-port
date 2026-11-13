@@ -23,6 +23,7 @@ export function useLenis() {
     });
 
     lenisRef.current = lenis;
+    (window as any).lenis = lenis;
 
     // Connect Lenis scroll event to ScrollTrigger.update
     lenis.on('scroll', ScrollTrigger.update);

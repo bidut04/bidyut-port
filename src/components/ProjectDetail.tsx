@@ -28,11 +28,13 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
     if (project) {
       window.addEventListener('keydown', handleKeyDown);
       document.body.style.overflow = 'hidden';
+      (window as any).lenis?.stop();
     }
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
       document.body.style.overflow = 'auto';
+      (window as any).lenis?.start();
     };
   }, [project]);
 
@@ -110,7 +112,9 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto bg-bg select-text"
+      data-lenis-prevent="true"
+      className="fixed inset-0 z-50 block overflow-y-auto overflow-x-hidden bg-bg select-text overscroll-contain"
+      style={{ WebkitOverflowScrolling: 'touch' }}
       role="dialog"
       aria-modal="true"
       aria-label={`Project Details: ${project.title}`}
