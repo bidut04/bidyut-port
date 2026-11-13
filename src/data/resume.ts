@@ -63,8 +63,8 @@ export const resumeData: ResumeData = {
     {
       platform: 'Portfolio',
       label: 'Live Portfolio',
-      url: 'https://portfolio-alpha-hazel-45.vercel.app/',
-      handle: 'portfolio-alpha-hazel-45.vercel.app'
+      url: 'https://bidyut-port-6dmw.vercel.app/',
+      handle: 'bidyut-port-6dmw.vercel.app'
     },
     {
       platform: 'Location',

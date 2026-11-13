@@ -30,7 +30,7 @@ export const projectsData: Project[] = [
     tools: ['React 18', 'TypeScript', 'Tailwind CSS', 'GSAP', 'Lenis', 'Vite'],
     year: '2024',
     client: 'Personal Production Showcase',
-    liveUrl: 'https://portfolio-alpha-hazel-45.vercel.app/',
+    liveUrl: 'https://bidyut-port-6dmw.vercel.app/',
     githubUrl: 'https://github.com/bidut04'
   },
   {
