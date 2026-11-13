@@ -288,38 +288,65 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
             </div>
           </div>
 
-          {/* Vertically Stacked Gallery Images */}
+          {/* Project Visuals */}
           <div className="detail-animate space-y-8 my-12">
             <h2 className="font-display uppercase text-primary text-2xl tracking-wider flex items-center gap-3">
               <span>Project Visuals</span>
               <span className="flex-1 h-0.5 bg-border" />
             </h2>
 
-            {/* Main Featured Showcase */}
-            <div className="relative rounded-3xl overflow-hidden border-4 border-ink shadow-sticker-lg bg-white">
-              <img
-                src={project.thumbnail}
-                alt={`${project.title} - Main Showcase`}
-                className="w-full h-auto object-cover max-h-[750px] filter contrast-[1.02]"
-                width={1200}
-                height={800}
-              />
-            </div>
-
-            {/* Additional gallery items stacked */}
-            {project.gallery.slice(1).map((imgUrl, i) => (
-              <div
-                key={i}
-                className="relative rounded-3xl overflow-hidden border-2 border-ink shadow-sticker bg-white p-6 sm:p-10 flex items-center justify-center min-h-[300px]"
-              >
-                <img
-                  src={imgUrl}
-                  alt={`${project.title} - Detail ${i + 1}`}
-                  className="max-h-[320px] max-w-full object-contain filter drop-shadow-md"
-                  loading="lazy"
-                />
+            {project.id === 'journey-bus-app' ? (
+              /* Mobile App 2-Screen Showcase (Only Two Images Side-by-Side) */
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto py-6">
+                {project.gallery.map((imgUrl, i) => (
+                  <div
+                    key={i}
+                    className="relative rounded-[36px] overflow-hidden border-4 border-ink shadow-sticker-lg bg-white p-3 sm:p-4 flex flex-col items-center justify-center transition-transform hover:-translate-y-1"
+                  >
+                    <div className="relative w-full rounded-[28px] overflow-hidden border-2 border-border bg-[#0a0b0e]">
+                      <img
+                        src={imgUrl}
+                        alt={`${project.title} - Screen ${i + 1}`}
+                        className="w-full h-auto object-contain filter contrast-[1.02] shadow-sm"
+                        loading="lazy"
+                      />
+                    </div>
+                    <span className="font-display font-black text-xs uppercase tracking-wider text-muted mt-3">
+                      {i === 0 ? 'Home & Fleet Selection' : 'Fleet Charter Details'}
+                    </span>
+                  </div>
+                ))}
               </div>
-            ))}
+            ) : (
+              /* Standard Desktop/Web Project Showcase */
+              <>
+                {/* Main Featured Showcase */}
+                <div className="relative rounded-3xl overflow-hidden border-4 border-ink shadow-sticker-lg bg-white">
+                  <img
+                    src={project.thumbnail}
+                    alt={`${project.title} - Main Showcase`}
+                    className="w-full h-auto object-cover max-h-[750px] filter contrast-[1.02]"
+                    width={1200}
+                    height={800}
+                  />
+                </div>
+
+                {/* Additional gallery items stacked */}
+                {project.gallery.slice(1).map((imgUrl, i) => (
+                  <div
+                    key={i}
+                    className="relative rounded-3xl overflow-hidden border-2 border-ink shadow-sticker bg-white p-6 sm:p-10 flex items-center justify-center min-h-[300px]"
+                  >
+                    <img
+                      src={imgUrl}
+                      alt={`${project.title} - Detail ${i + 1}`}
+                      className="max-h-[320px] max-w-full object-contain filter drop-shadow-md"
+                      loading="lazy"
+                    />
+                  </div>
+                ))}
+              </>
+            )}
           </div>
 
           {/* Bottom Action Bar */}

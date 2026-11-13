@@ -110,20 +110,20 @@ export const projectsData: Project[] = [
     githubUrl: 'https://github.com/bidut04'
   },
   {
-    id: 'upwork',
+    id: 'journey-bus-app',
     number: '06',
-    title: 'UpWork',
-    category: 'Character design',
-    description: 'A bespoke set of whimsical retro tech mascots created for digital marketing campaigns, tutorials, and desktop interfaces. Showcases a joyful vintage camera personified with expressive rubber-hose eyes.',
-    thumbnail: '/images/projects/project-05.jpg',
+    title: 'Journey Fleet App',
+    category: 'Mobile Application (iOS & Android)',
+    description: 'An intuitive, modern bus booking and fleet charter mobile application. Features real-time trending fleet exploration, luxury coach & sleeper seat reservation, private full-fleet mountain charters, and seamless passenger booking workflows.',
+    thumbnail: '/images/projects/project-bus-app-thumb.jpg',
     gallery: [
-      '/images/projects/project-05.jpg',
-      '/stickers/camera.svg',
-      '/stickers/cool.svg'
+      '/images/projects/project-bus-app-1.jpg',
+      '/images/projects/project-bus-app-2.jpg'
     ],
-    tools: ['Figma', 'Illustrator', 'After Effects'],
+    tools: ['React Native', 'Expo', 'TypeScript', 'Tailwind CSS', 'Mobile UI'],
     year: '2024',
-    client: 'UpWork Creative'
+    client: 'Journey Fleet Transport',
+    githubUrl: 'https://github.com/bidut04'
   },
   {
     id: 'logos',
