@@ -20,7 +20,7 @@ const config: Config = {
       },
       fontFamily: {
         display: ['"Archivo Black"', 'sans-serif'],
-        script: ['"Yellowtail"', 'cursive'],
+        script: ['"Comic Sans MS"', '"Comic Neue"', '"Chalkboard SE"', 'cursive'],
         body: ['"Libre Baskerville"', 'serif'],
       },
       boxShadow: {
