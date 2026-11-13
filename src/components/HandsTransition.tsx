@@ -281,25 +281,6 @@ export const HandsTransition: React.FC<HandsTransitionProps> = ({
         g.drawImage(handL, leftX, leftY, handL.naturalWidth * ms, handL.naturalHeight * ms);
         g.drawImage(handR, rightX, rightY, handR.naturalWidth * ms, handR.naturalHeight * ms);
 
-        // Orange "VIEW" Pill Badge on Left Arm
-        const badgeX = leftX + handL.naturalWidth * ms * 0.28;
-        const badgeY = leftY + handL.naturalHeight * ms * 0.72;
-        const badgeR = Math.max(16, 22 * ms * 1.2);
-
-        g.fillStyle = '#ff5a00';
-        g.beginPath();
-        g.arc(badgeX, badgeY, badgeR, 0, 6.2832);
-        g.fill();
-        g.lineWidth = 2;
-        g.strokeStyle = '#ffffff';
-        g.stroke();
-
-        g.fillStyle = '#ffffff';
-        g.font = `900 ${Math.round(badgeR * 0.58)}px sans-serif`;
-        g.textAlign = 'center';
-        g.textBaseline = 'middle';
-        g.fillText('VIEW', badgeX, badgeY);
-
         g.globalCompositeOperation = 'lighter';
       }
 
