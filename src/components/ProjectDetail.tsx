@@ -296,23 +296,31 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
             </h2>
 
             {project.id === 'journey-bus-app' ? (
-              /* Mobile App 2-Screen Showcase (Only Two Images Side-by-Side) */
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto py-6">
+              /* Mobile App 2-Screen Showcase (Contained Side-by-Side Mobile Mockups) */
+              <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 max-w-4xl mx-auto py-4">
                 {project.gallery.map((imgUrl, i) => (
                   <div
                     key={i}
-                    className="relative rounded-[36px] overflow-hidden border-4 border-ink shadow-sticker-lg bg-white p-3 sm:p-4 flex flex-col items-center justify-center transition-transform hover:-translate-y-1"
+                    className="relative flex flex-col items-center transition-transform hover:-translate-y-1.5 duration-300"
                   >
-                    <div className="relative w-full rounded-[28px] overflow-hidden border-2 border-border bg-[#0a0b0e]">
-                      <img
-                        src={imgUrl}
-                        alt={`${project.title} - Screen ${i + 1}`}
-                        className="w-full h-auto object-contain filter contrast-[1.02] shadow-sm"
-                        loading="lazy"
-                      />
+                    {/* Realistic Rounded Mobile Device Bezel */}
+                    <div className="relative rounded-[40px] p-2 bg-[#1A1A1A] border-4 border-ink shadow-sticker-lg">
+                      {/* Top Speaker / Camera Notch */}
+                      <div className="absolute top-3.5 left-1/2 -translate-x-1/2 w-14 h-2.5 bg-black rounded-full z-20 opacity-80" />
+
+                      {/* Fully Contained Phone Screen Container */}
+                      <div className="relative rounded-[32px] overflow-hidden bg-white h-[480px] sm:h-[540px] md:h-[580px] aspect-[458/1024] flex items-center justify-center shadow-inner">
+                        <img
+                          src={imgUrl}
+                          alt={`${project.title} - Screen ${i + 1}`}
+                          className="w-full h-full object-contain filter contrast-[1.02]"
+                          loading="lazy"
+                        />
+                      </div>
                     </div>
-                    <span className="font-display font-black text-xs uppercase tracking-wider text-muted mt-3">
-                      {i === 0 ? 'Home & Fleet Selection' : 'Fleet Charter Details'}
+
+                    <span className="font-display font-black text-xs uppercase tracking-wider text-muted mt-4 bg-white px-3.5 py-1 rounded-full border border-ink shadow-sm">
+                      {i === 0 ? 'Home & Fleet Selection' : 'Full Fleet Charter'}
                     </span>
                   </div>
                 ))}
