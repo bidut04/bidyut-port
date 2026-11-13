@@ -72,20 +72,23 @@ export const projectsData: Project[] = [
     githubUrl: 'https://github.com/bidut04'
   },
   {
-    id: '3d-artworks',
+    id: 'dev-docs',
     number: '04',
-    title: '3D Artworks',
-    category: 'Few of my favourite products',
-    description: 'Playful stylized 3D cloud character mascots wandering through miniature retro landscapes. Rendered with tactile matte clay shaders, vivid sky gradients, and nostalgic Saturday morning cartoon vibes.',
-    thumbnail: '/images/projects/project-03.jpg',
+    title: 'Dev Docs',
+    category: 'Developer Platform & Documentation System',
+    description: 'An all-in-one developer documentation and knowledge platform combining tech stack guides, interactive libraries, and productivity tools. Built with a sleek dark aesthetic, emerald neon accents, instant search, and responsive code reference layouts.',
+    thumbnail: '/images/projects/project-devdocs.jpg',
     gallery: [
-      '/images/projects/project-03.jpg',
-      '/stickers/sparkle.svg',
-      '/stickers/good-mood.svg'
+      '/images/projects/project-devdocs.jpg',
+      '/stickers/controller.svg',
+      '/stickers/lightning.svg',
+      '/stickers/cool.svg'
     ],
-    tools: ['Blender 4.0', 'Cycles', 'Substance 3D'],
-    year: '2023',
-    client: 'Character Collectibles'
+    tools: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Vercel'],
+    year: '2024',
+    client: 'DevDocs Platform',
+    liveUrl: 'https://noob-doc-web-oklt.vercel.app/',
+    githubUrl: 'https://github.com/bidut04'
   },
   {
     id: 'warner-bros',
