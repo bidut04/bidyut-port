@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bidyut-port-6dmw.vercel.app/sitemap.xml

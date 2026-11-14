@@ -1,0 +1,16 @@
+{
+  "name": "Bidyut Kumar Bhowmick — Portfolio",
+  "short_name": "Bidyut Portfolio",
+  "description": "Full Stack Developer portfolio of Bidyut Kumar Bhowmick featuring scalable web applications, mobile apps, and interactive UI experiences.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F1EFEA",
+  "theme_color": "#F1EFEA",
+  "icons": [
+    {
+      "src": "/stickers/good-mood.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
