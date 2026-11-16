@@ -33,13 +33,12 @@ export interface ResumeData {
   software: SoftwareItem[];
 }
 
-
 export const resumeData: ResumeData = {
   name: 'Bidyut Kumar Bhowmick',
 
   title: 'Full Stack Developer',
 
-  bio: "I'm a passionate Full Stack Developer with a strong interest in building scalable, responsive, and user-friendly web applications. I work with modern technologies like React, TypeScript, Node.js, Express.js, and databases. I enjoy solving real-world problems, designing clean user interfaces, and developing efficient backend systems. I'm continuously learning new technologies and improving my skills to build production-ready applications.",
+  bio: "I'm a passionate Full Stack Developer specializing in building scalable, responsive, and user-friendly web and mobile applications. I work with modern technologies like React, TypeScript, Next.js, Node.js, Express.js, React Native, and PostgreSQL/MySQL databases. I enjoy architecting clean, maintainable systems, crafting engaging user interfaces, and delivering production-ready digital products with high performance and accessibility.",
 
   contacts: [
     {
@@ -84,33 +83,33 @@ export const resumeData: ResumeData = {
     {
       id: 'edu-1',
       role: 'Bachelor of Computer Applications (BCA)',
-      organization: 'BITM',
-      period: 'Add your graduation years',
-      description: 'Studied computer applications, programming fundamentals, database management, software development, and web technologies.'
+      organization: 'Bengal Institute of Technology & Management (BITM)',
+      period: '2021 – 2024',
+      description: 'Graduated with a comprehensive focus on computer science principles, data structures, algorithms, relational database systems, and modern full-stack web engineering.'
     },
     {
       id: 'edu-2',
-      role: 'Higher Secondary Education',
+      role: 'Higher Secondary Education (Science & Computer Application)',
       organization: 'Daspur Vivekananda High School',
-      period: 'Add your passing years',
-      description: 'Completed higher secondary education with an academic foundation for further studies in computer applications.'
+      period: '2019 – 2021',
+      description: 'Completed Higher Secondary schooling with academic specialization in Mathematics, Physics, Chemistry, and Computer Applications, establishing a strong analytical and programming base.'
     }
   ],
 
   experience: [
     {
       id: 'exp-1',
-      role: 'Full Stack Developer',
-      organization: 'Professional Experience',
-      period: 'Add your actual employment period',
-      description: 'Working with modern frontend and backend technologies to develop web applications, implement REST APIs, manage databases, and build responsive user interfaces.'
+      role: 'Full Stack Web & Application Developer',
+      organization: 'Freelance & Production Projects',
+      period: '2023 – Present',
+      description: 'Engineering production web & mobile applications using React, TypeScript, Next.js, Node.js, and PostgreSQL. Architecting RESTful APIs with secure JWT authentication, designing responsive retro & modern UI components, and integrating robust database layers using Prisma ORM.'
     },
     {
       id: 'exp-2',
-      role: 'Full Stack Developer',
-      organization: 'Personal & Academic Projects',
-      period: 'Ongoing',
-      description: 'Developed practical applications including multi-tenant queue booking systems, property management solutions, and backend services with authentication, authorization, database management, and API integration.'
+      role: 'Frontend & Mobile Application Engineer',
+      organization: 'Production Web & Mobile Solutions',
+      period: '2022 – Present',
+      description: 'Built cross-platform solutions including the Journey Fleet mobile booking app (React Native/Expo), DevDocs platform, SolarNext energy portal, and Agomoni cultural festival web application with custom audio players and interactive animations.'
     }
   ],
 
@@ -126,8 +125,9 @@ export const resumeData: ResumeData = {
     'JavaScript',
     'Node.js',
     'Express.js',
-    'Spring Boot',
-    'Java',
+    'React Native',
+    'Expo',
+    'Next.js',
     'REST API Development',
     'PostgreSQL',
     'MySQL',
@@ -136,17 +136,17 @@ export const resumeData: ResumeData = {
     'JWT Authentication',
     'Git & GitHub',
     'Tailwind CSS',
-    'Shadcn UI',
+    'GSAP Animations',
     'TanStack Query',
     'HTML5 & CSS3',
     'Problem Solving'
   ],
 
   software: [
-    { name: 'React.js', percentage: 85 },
-    { name: 'TypeScript / JavaScript', percentage: 85 },
-    { name: 'Node.js / Express.js', percentage: 80 },
-    { name: 'React native', percentage: 80 },
-    { name: 'PostgreSQL / MySQL', percentage: 75 }
+    { name: 'React.js / Next.js', percentage: 90 },
+    { name: 'TypeScript / JavaScript', percentage: 88 },
+    { name: 'Node.js / Express.js', percentage: 82 },
+    { name: 'React Native / Expo', percentage: 80 },
+    { name: 'PostgreSQL / MySQL / Prisma', percentage: 78 }
   ]
 };
