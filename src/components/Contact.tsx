@@ -1,12 +1,19 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useGSAP } from '@gsap/react';
 import { gsap } from '../lib/gsap';
 import { resumeData } from '../data/resume';
 import { Sticker } from './Sticker';
-import { ArrowUp, Mail, Send } from 'lucide-react';
+import { ArrowUp, Mail, Send, Copy, Check } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   const containerRef = useRef<HTMLElement>(null);
+  const [copied, setCopied] = useState(false);
+
+  const copyEmail = () => {
+    navigator.clipboard.writeText('barunbhowmick727@gmail.com');
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2500);
+  };
 
   useGSAP(
     () => {
@@ -106,16 +113,35 @@ export const Contact: React.FC = () => {
           Need a blazing-fast custom website, an automated CRM to streamline your workflow, or an intuitive mobile app built from the ground up? From concept &amp; UI/UX to clean, robust code — let&apos;s turn your vision into high-impact digital products.
         </p>
 
-        {/* Large Email Button in Orange */}
-        <div className="mb-12">
+        {/* Email CTA + 1-Click Copy Conversion Buttons */}
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
           <a
             href="mailto:barunbhowmick727@gmail.com?subject=Let's%20Work%20Together"
-            className="email-btn inline-flex items-center gap-3 px-8 sm:px-12 py-5 sm:py-6 bg-accent text-ink font-display text-base sm:text-xl uppercase tracking-wider rounded-full border-4 border-ink shadow-sticker-lg hover:bg-pop hover:-rotate-2 hover:scale-105 active:scale-95 transition-all group"
+            className="email-btn inline-flex items-center gap-3 px-7 sm:px-10 py-4 sm:py-5 bg-accent text-ink font-display text-base sm:text-xl uppercase tracking-wider rounded-full border-4 border-ink shadow-sticker-lg hover:bg-pop hover:-rotate-1 hover:scale-105 active:scale-95 transition-all group"
           >
-            <Mail className="w-6 h-6 text-ink group-hover:rotate-12 transition-transform" />
+            <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-ink group-hover:rotate-12 transition-transform" />
             <span>barunbhowmick727@gmail.com</span>
-            <Send className="w-5 h-5 text-ink ml-1" />
+            <Send className="w-4 h-4 sm:w-5 sm:h-5 text-ink ml-1" />
           </a>
+
+          <button
+            onClick={copyEmail}
+            type="button"
+            aria-label="Copy Email Address"
+            className="inline-flex items-center gap-2 px-5 py-4 sm:py-5 bg-white text-ink font-display text-xs sm:text-sm uppercase tracking-wider rounded-full border-3 border-ink shadow-sticker hover:bg-soft active:scale-95 transition-all cursor-pointer"
+          >
+            {copied ? (
+              <>
+                <Check className="w-4 h-4 text-emerald-600" />
+                <span className="text-emerald-700 font-bold">Copied! ✓</span>
+              </>
+            ) : (
+              <>
+                <Copy className="w-4 h-4 text-accent" />
+                <span>Copy Email</span>
+              </>
+            )}
+          </button>
         </div>
 
         {/* Social Links Row */}

@@ -187,19 +187,25 @@ export const Hero: React.FC = () => {
         </a>
       </div>
 
+      {/* Primary Semantic H1 for SEO Search Engines & Accessibility */}
+      <h1 className="sr-only">
+        Bidyut Kumar Bhowmick — Full Stack &amp; Mobile Developer Portfolio
+      </h1>
+
       {/* Giant Typography Centerpiece */}
       <div
         ref={titleRef}
+        aria-hidden="true"
         className="relative z-40 flex flex-col items-center justify-center text-center px-4 w-full select-none pointer-events-none"
       >
-        <h1 className="font-display font-black text-ink text-[clamp(80px,15vw,200px)] leading-[0.72] tracking-[-0.09em] uppercase flex flex-col items-center justify-center m-0 p-0 drop-shadow-sm">
+        <div className="font-display font-black text-ink text-[clamp(80px,15vw,200px)] leading-[0.72] tracking-[-0.09em] uppercase flex flex-col items-center justify-center m-0 p-0 drop-shadow-sm">
           <div className="overflow-hidden py-1">
             <span className="inline-block">{renderLetters('PORT')}</span>
           </div>
           <div className="overflow-hidden py-1">
             <span className="inline-block">{renderLetters('FOLIO')}</span>
           </div>
-        </h1>
+        </div>
 
         {/* Script subtitle overlapping the typography - in front of all stickers */}
         <h2 className="font-script text-primary text-3xl sm:text-5xl md:text-6xl -mt-6 sm:-mt-10 md:-mt-14 z-50 drop-shadow-[3px_3px_0px_#ffffff] rotate-[-4deg] pointer-events-auto">

@@ -1,5 +1,6 @@
 import { useLenis } from './hooks/useLenis';
 import { Cursor } from './components/Cursor';
+import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Resume } from './components/Resume';
@@ -15,6 +16,9 @@ export function App() {
     <div className="min-h-screen bg-bg text-ink relative selection:bg-accent selection:text-white">
       {/* Custom Retro Interactive Cursor */}
       <Cursor />
+
+      {/* Floating Retro Sticky Navigation Pill */}
+      <Navbar />
 
       {/* Main Content Sections */}
       <main className="relative z-10">

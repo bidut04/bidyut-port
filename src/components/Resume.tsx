@@ -5,6 +5,7 @@ import { resumeData } from '../data/resume';
 import { SkillsPills } from './SkillsPills';
 import { SoftwareBars } from './SoftwareBars';
 import { Sticker } from './Sticker';
+import { FileDown, ExternalLink } from 'lucide-react';
 
 export const Resume: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -145,6 +146,27 @@ export const Resume: React.FC = () => {
                 <span className="font-display text-sm text-ink font-black">70s</span>
               </div>
             </div>
+          </div>
+
+          {/* Quick Resume Download & View Actions */}
+          <div className="flex flex-wrap items-center gap-3 sm:ml-auto">
+            <a
+              href="/resume.pdf"
+              download="Bidyut_Kumar_Bhowmick_Resume.pdf"
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent text-white font-display text-xs sm:text-sm uppercase tracking-wider rounded-full border-2 border-ink shadow-sticker hover:bg-pop hover:text-ink hover:-translate-y-0.5 transition-all"
+            >
+              <FileDown className="w-4 h-4" />
+              <span>Download PDF</span>
+            </a>
+            <a
+              href="/resume.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2.5 bg-white text-ink font-display text-xs sm:text-sm uppercase tracking-wider rounded-full border-2 border-ink shadow-sticker hover:bg-soft transition-all"
+            >
+              <ExternalLink className="w-4 h-4 text-accent" />
+              <span>View Online CV</span>
+            </a>
           </div>
         </div>
 

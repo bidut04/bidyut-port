@@ -137,8 +137,8 @@ export const ProjectsGrid: React.FC = () => {
               VOL. 2026
             </span>
           </div>
-          <p className="font-body italic text-muted text-sm sm:text-base mt-2">
-            A curated showcase of digital experiences, featuring brand identities, mobile apps, custom CRM solutions, and modern e-commerce platforms.
+          <p className="font-body italic text-muted text-sm sm:text-base mt-2 max-w-2xl mx-auto">
+            Production full-stack web applications, REST APIs, and cross-platform mobile apps engineered with React, TypeScript, Node.js, and React Native.
           </p>
         </div>
 

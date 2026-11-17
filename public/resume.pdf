@@ -1,0 +1,182 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 6 0 R /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 4620 >>
+stream
+0.75 w 0.2 0.2 0.2 RG 50 688 m 560 688 l S
+0.75 w 0.2 0.2 0.2 RG 50 634 m 560 634 l S
+0.75 w 0.2 0.2 0.2 RG 50 549 m 560 549 l S
+0.75 w 0.2 0.2 0.2 RG 50 422 m 560 422 l S
+0.75 w 0.2 0.2 0.2 RG 50 326 m 560 326 l S
+0.75 w 0.2 0.2 0.2 RG 50 241 m 560 241 l S
+BT
+/F2 22 Tf
+1 0 0 1 50 745 Tm
+(BIDYUT KUMAR BHOWMICK) Tj
+/F1 12 Tf
+1 0 0 1 50 728 Tm
+(Full Stack & Mobile Developer | West Bengal, India) Tj
+/F1 9.5 Tf
+1 0 0 1 50 712 Tm
+(Email: barunbhowmick727@gmail.com | Portfolio: bidyut-port-6dmw.vercel.app | GitHub: github.com/bidut04) Tj
+/F1 9.5 Tf
+1 0 0 1 50 698 Tm
+(LinkedIn: linkedin.com/in/bidyut-kumar-bhowmick-bb4a6a301) Tj
+/F2 12 Tf
+1 0 0 1 50 672 Tm
+(PROFESSIONAL SUMMARY) Tj
+/F1 9.5 Tf
+1 0 0 1 50 657 Tm
+(Passionate Full Stack & Mobile Developer specializing in React, TypeScript, Next.js, Node.js, Express, and React) Tj
+/F1 9.5 Tf
+1 0 0 1 50 644 Tm
+(Native. Proven track record building production-grade web platforms, scalable REST APIs, and responsive mobile apps.) Tj
+/F2 12 Tf
+1 0 0 1 50 620 Tm
+(TECHNICAL SKILLS) Tj
+/F2 9.5 Tf
+1 0 0 1 50 605 Tm
+(Frontend & UI:) Tj
+/F1 9.5 Tf
+1 0 0 1 135 605 Tm
+(React.js, Next.js, TypeScript, JavaScript, Tailwind CSS, GSAP Animations, TanStack Query, HTML5, CSS3) Tj
+/F2 9.5 Tf
+1 0 0 1 50 590 Tm
+(Backend & APIs:) Tj
+/F1 9.5 Tf
+1 0 0 1 135 590 Tm
+(Node.js, Express.js, REST API Development, JWT Authentication, Webhooks, Middleware Engineering) Tj
+/F2 9.5 Tf
+1 0 0 1 50 575 Tm
+(Databases & ORM:) Tj
+/F1 9.5 Tf
+1 0 0 1 135 575 Tm
+(PostgreSQL, MySQL, Prisma ORM, Relational Database Modeling) Tj
+/F2 9.5 Tf
+1 0 0 1 50 560 Tm
+(Mobile & Tooling:) Tj
+/F1 9.5 Tf
+1 0 0 1 135 560 Tm
+(React Native, Expo, Git, GitHub, Vite, Postman, Vercel, Netlify) Tj
+/F2 12 Tf
+1 0 0 1 50 535 Tm
+(PROFESSIONAL EXPERIENCE) Tj
+/F2 10.5 Tf
+1 0 0 1 50 520 Tm
+(Full Stack Web & Application Developer) Tj
+/F1 9.5 Tf
+1 0 0 1 340 520 Tm
+(Freelance & Production Projects | 2023 - Present) Tj
+/F1 9.5 Tf
+1 0 0 1 55 506 Tm
+(- Designed and shipped custom full-stack web applications with React, TypeScript, Node.js, and PostgreSQL.) Tj
+/F1 9.5 Tf
+1 0 0 1 55 493 Tm
+(- Architected secure REST APIs with JWT authentication, role-based access control, and Prisma ORM data modeling.) Tj
+/F1 9.5 Tf
+1 0 0 1 55 480 Tm
+(- Implemented high-conversion UI/UX workflows, responsive typography, and sub-second page performance.) Tj
+/F2 10.5 Tf
+1 0 0 1 50 460 Tm
+(Frontend & Mobile Application Engineer) Tj
+/F1 9.5 Tf
+1 0 0 1 340 460 Tm
+(Production Solutions | 2022 - Present) Tj
+/F1 9.5 Tf
+1 0 0 1 55 446 Tm
+(- Engineered cross-platform mobile apps using React Native and Expo with native gesture navigation.) Tj
+/F1 9.5 Tf
+1 0 0 1 55 433 Tm
+(- Developed interactive developer portals, knowledgebases, and festival web platforms with custom audio.) Tj
+/F2 12 Tf
+1 0 0 1 50 408 Tm
+(FEATURED PROJECTS) Tj
+/F2 10 Tf
+1 0 0 1 50 393 Tm
+(1. Journey Fleet Charter App:) Tj
+/F1 9.5 Tf
+1 0 0 1 195 393 Tm
+(Cross-platform mobile booking app for bus fleets and charter rentals with Expo & TypeScript.) Tj
+/F2 10 Tf
+1 0 0 1 50 379 Tm
+(2. Dev Docs Knowledgebase:) Tj
+/F1 9.5 Tf
+1 0 0 1 195 379 Tm
+(Developer documentation portal with tech stack guides, instant search, and code reference layout.) Tj
+/F2 10 Tf
+1 0 0 1 50 365 Tm
+(3. SolarNext Energy Platform:) Tj
+/F1 9.5 Tf
+1 0 0 1 195 365 Tm
+(Clean-energy engineering portal with active plant telemetry \(50.4 MW\), ROI calculators, and consultation.) Tj
+/F2 10 Tf
+1 0 0 1 50 351 Tm
+(4. Agomoni Sangha Cultural Portal:) Tj
+/F1 9.5 Tf
+1 0 0 1 195 351 Tm
+(Festival platform with live countdown timers, pandal directories, and online donation integration.) Tj
+/F2 10 Tf
+1 0 0 1 50 337 Tm
+(5. Retro Sticker Portfolio:) Tj
+/F1 9.5 Tf
+1 0 0 1 195 337 Tm
+(Award-style 90s aesthetic portfolio with 60fps Lenis smooth scroll and interactive GSAP transitions.) Tj
+/F2 12 Tf
+1 0 0 1 50 312 Tm
+(EDUCATION) Tj
+/F2 10 Tf
+1 0 0 1 50 297 Tm
+(Bachelor of Computer Applications \(BCA\)) Tj
+/F1 9.5 Tf
+1 0 0 1 260 297 Tm
+(Bengal Institute of Technology & Management \(BITM\) | 2021 - 2024) Tj
+/F1 9 Tf
+1 0 0 1 55 284 Tm
+(Coursework: Data Structures, Database Systems, Web Application Development, Algorithms, Software Engineering.) Tj
+/F2 10 Tf
+1 0 0 1 50 265 Tm
+(Higher Secondary Education \(Science & Computer Application\)) Tj
+/F1 9.5 Tf
+1 0 0 1 350 265 Tm
+(Daspur Vivekananda High School | 2019 - 2021) Tj
+/F1 9 Tf
+1 0 0 1 55 252 Tm
+(Specialization in Mathematics, Physics, Chemistry, and Computer Applications.) Tj
+/F2 12 Tf
+1 0 0 1 50 227 Tm
+(LANGUAGES) Tj
+/F1 9.5 Tf
+1 0 0 1 50 212 Tm
+(English \(Professional Working Proficiency\)  |  Bengali \(Native\)  |  Hindi \(Conversational\)) Tj
+ET
+
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+5068
+%%EOF

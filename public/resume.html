@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bidyut Kumar Bhowmick — Resume &amp; CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #F1EFEA;
+      color: #1A1A1A;
+      margin: 0;
+      padding: 2rem 1rem;
+      line-height: 1.5;
+    }
+    .resume-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      border: 3px solid #1A1A1A;
+      box-shadow: 8px 8px 0 #1A1A1A;
+      border-radius: 8px;
+      padding: 3rem 2.5rem;
+    }
+    .header {
+      border-bottom: 2px solid #1A1A1A;
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .title-block h1 {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 2rem;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+    }
+    .title-block p {
+      margin: 0.25rem 0 0 0;
+      font-weight: 700;
+      color: #FF6B1A;
+      font-size: 1.1rem;
+    }
+    .actions {
+      display: flex;
+      gap: 0.75rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border: 2px solid #1A1A1A;
+      box-shadow: 3px 3px 0 #1A1A1A;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      background: #FFD43F;
+      color: #1A1A1A;
+    }
+    .btn-primary {
+      background: #FF6B1A;
+      color: #FFFFFF;
+    }
+    .btn:hover {
+      transform: translate(-1px, -1px);
+      box-shadow: 4px 4px 0 #1A1A1A;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 1.5rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+    .contact-bar a {
+      color: #1A1A1A;
+      text-decoration: underline;
+    }
+    h2 {
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      border-bottom: 2px solid #FF6B1A;
+      padding-bottom: 0.35rem;
+      margin: 1.8rem 0 1rem 0;
+      color: #1A1A1A;
+    }
+    .section-item {
+      margin-bottom: 1.25rem;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    .item-title {
+      font-weight: 800;
+      font-size: 1rem;
+      color: #1A1A1A;
+    }
+    .item-meta {
+      font-size: 0.85rem;
+      font-style: italic;
+      color: #666;
+    }
+    .item-desc {
+      font-size: 0.9rem;
+      color: #333;
+      margin: 0.35rem 0 0 0;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+    .skills-label {
+      font-weight: 700;
+      color: #1A1A1A;
+    }
+    @media print {
+      body { background: #FFFFFF; padding: 0; }
+      .resume-container { border: none; box-shadow: none; padding: 0; max-width: 100%; }
+      .actions { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-container">
+    <div class="header">
+      <div class="title-block">
+        <h1>Bidyut Kumar Bhowmick</h1>
+        <p>Full Stack &amp; Mobile Developer</p>
+      </div>
+      <div class="actions">
+        <a href="/resume.pdf" download="Bidyut_Kumar_Bhowmick_Resume.pdf" class="btn btn-primary">Download PDF</a>
+        <button onclick="window.print()" class="btn">Print CV</button>
+        <a href="/" class="btn">Portfolio &rarr;</a>
+      </div>
+    </div>
+
+    <div class="contact-bar">
+      <span>📍 West Bengal, India</span>
+      <span>✉️ <a href="mailto:barunbhowmick727@gmail.com">barunbhowmick727@gmail.com</a></span>
+      <span>💻 <a href="https://github.com/bidut04" target="_blank" rel="noopener">github.com/bidut04</a></span>
+      <span>🔗 <a href="https://linkedin.com/in/bidyut-kumar-bhowmick-bb4a6a301" target="_blank" rel="noopener">LinkedIn</a></span>
+      <span>🌐 <a href="https://bidyut-port-6dmw.vercel.app/" target="_blank" rel="noopener">Live Portfolio</a></span>
+    </div>
+
+    <h2>Professional Summary</h2>
+    <p class="item-desc" style="font-size: 0.95rem; line-height: 1.6;">
+      Passionate Full Stack &amp; Mobile Developer specializing in React, TypeScript, Next.js, Node.js, Express, and React Native. Proven track record building production-grade web platforms, scalable REST APIs, and responsive mobile applications with high accessibility and modern architecture.
+    </p>
+
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skills-label">Frontend:</div>
+      <div>React.js, Next.js, TypeScript, JavaScript, Tailwind CSS, GSAP Animations, TanStack Query, HTML5, CSS3</div>
+      <div class="skills-label">Backend &amp; APIs:</div>
+      <div>Node.js, Express.js, REST API Development, JWT Authentication, Middleware Engineering</div>
+      <div class="skills-label">Databases:</div>
+      <div>PostgreSQL, MySQL, Prisma ORM, Relational Database Modeling</div>
+      <div class="skills-label">Mobile &amp; Tools:</div>
+      <div>React Native, Expo, Git, GitHub, Vite, Postman, Vercel, Netlify</div>
+    </div>
+
+    <h2>Professional Experience</h2>
+    <div class="section-item">
+      <div class="item-header">
+        <span class="item-title">Full Stack Web &amp; Application Developer</span>
+        <span class="item-meta">Freelance &amp; Production Projects | 2023 – Present</span>
+      </div>
+      <p class="item-desc">
+        Designed, developed, and deployed high-performance web applications using React, TypeScript, and Node.js. Built secure REST APIs with JWT authentication and PostgreSQL via Prisma ORM. Shipped production client solutions with optimized page speeds and conversion funnels.
+      </p>
+    </div>
+
+    <div class="section-item">
+      <div class="item-header">
+        <span class="item-title">Frontend &amp; Mobile Application Engineer</span>
+        <span class="item-meta">Production Web &amp; Mobile Solutions | 2022 – Present</span>
+      </div>
+      <p class="item-desc">
+        Engineered cross-platform mobile apps using React Native and Expo (Journey Fleet app). Developed developer platforms (Dev Docs) and cultural festival web portals (Agomoni Sangha) with custom interactive audio-visual components.
+      </p>
+    </div>
+
+    <h2>Featured Projects</h2>
+    <div class="section-item">
+      <div class="item-header">
+        <span class="item-title">1. Journey Fleet Charter App</span>
+        <span class="item-meta">React Native, Expo, TypeScript, Tailwind CSS</span>
+      </div>
+      <p class="item-desc">Cross-platform mobile application for bus reservations and private fleet charters with luxury sleeper seat booking.</p>
+    </div>
+
+    <div class="section-item">
+      <div class="item-header">
+        <span class="item-title">2. Dev Docs Knowledgebase</span>
+        <span class="item-meta">React, TypeScript, Tailwind CSS, Vite</span>
+      </div>
+      <p class="item-desc">All-in-one developer documentation platform combining tech stack guides, libraries, and fast search.</p>
+    </div>
+
+    <div class="section-item">
+      <div class="item-header">
+        <span class="item-title">3. SolarNext Energy Platform</span>
+        <span class="item-meta">React, TypeScript, Tailwind CSS, Vite</span>
+      </div>
+      <p class="item-desc">Renewable energy platform with active plant telemetry (50.4 MW), interactive solar ROI calculators, and consultation bookings.</p>
+    </div>
+
+    <h2>Education</h2>
+    <div class="section-item">
+      <div class="item-header">
+        <span class="item-title">Bachelor of Computer Applications (BCA)</span>
+        <span class="item-meta">Bengal Institute of Technology &amp; Management (BITM) | 2021 – 2024</span>
+      </div>
+      <p class="item-desc">Comprehensive coursework in Data Structures, Database Systems, Web Application Development, and Algorithms.</p>
+    </div>
+
+    <div class="section-item">
+      <div class="item-header">
+        <span class="item-title">Higher Secondary Education (Science &amp; Computer Application)</span>
+        <span class="item-meta">Daspur Vivekananda High School | 2019 – 2021</span>
+      </div>
+      <p class="item-desc">Academic focus in Mathematics, Physics, Chemistry, and Computer Applications.</p>
+    </div>
+
+    <h2>Languages</h2>
+    <p class="item-desc">English (Professional Working Proficiency), Bengali (Native), Hindi (Conversational)</p>
+  </div>
+</body>
+</html>

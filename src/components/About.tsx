@@ -176,9 +176,26 @@ export const About: React.FC = () => {
             </h3>
 
             {/* Editorial Biography paragraph */}
-            <p className="font-body text-ink text-base sm:text-lg leading-relaxed text-left lg:text-justify mb-8 text-[#2A2A2A]">
+            <p className="font-body text-ink text-base sm:text-lg leading-relaxed text-left lg:text-justify mb-6 text-[#2A2A2A]">
               {resumeData.bio}
             </p>
+
+            {/* Quick Action Badges */}
+            <div className="flex flex-wrap items-center gap-3 mb-8">
+              <a
+                href="/resume.pdf"
+                download="Bidyut_Kumar_Bhowmick_Resume.pdf"
+                className="inline-flex items-center gap-1.5 px-4 py-2 bg-accent text-white font-display text-xs uppercase tracking-wider rounded-full border-2 border-ink shadow-sticker hover:bg-pop hover:text-ink transition-all"
+              >
+                <span>📄 Download Resume</span>
+              </a>
+              <a
+                href="#projects"
+                className="inline-flex items-center gap-1.5 px-4 py-2 bg-white text-ink font-display text-xs uppercase tracking-wider rounded-full border-2 border-ink shadow-sticker hover:bg-soft transition-all"
+              >
+                <span>🚀 View 6 Live Projects ↓</span>
+              </a>
+            </div>
 
             {/* Contacts Section */}
             <div className="pt-4 border-t-2 border-border/80">
