@@ -168,15 +168,6 @@ export const Hero: React.FC = () => {
       {/* Plastic wrap overlay */}
       <PlasticOverlay opacity={0.52} />
 
-      {/* Decorative Vintage Stamp / Tape in top corner */}
-      <div className="absolute top-6 left-6 z-30 flex items-center gap-3">
-        <span className="font-display text-xs uppercase tracking-widest bg-ink text-white px-3 py-1 rounded-sm shadow-sticker">
-          ISSUE VOL. 74
-        </span>
-        <span className="font-script text-primary text-xl hidden sm:inline-block">
-          Full Stack Edition
-        </span>
-      </div>
 
       <div className="absolute top-6 right-6 z-30 flex items-center gap-2">
         <a
