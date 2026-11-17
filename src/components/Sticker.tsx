@@ -30,7 +30,7 @@ export const Sticker: React.FC<StickerProps> = ({
       id={id}
       data-sticker="true"
       data-depth={depth}
-      className={`absolute select-none pointer-events-auto sticker-element z-30 ${className}`}
+      className={`absolute select-none pointer-events-auto sticker-element z-20 ${className}`}
       style={{
         width,
         height,

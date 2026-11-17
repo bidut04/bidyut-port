@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
         <div className="flex items-center gap-4 text-muted">
           <span>Printed on Retro Paper</span>
           <span>•</span>
-          <span className="font-script text-primary text-lg">DEVOLOPER</span>
+          <span className="font-script text-primary text-lg">DEVELOPER</span>
         </div>
       </div>
     </footer>

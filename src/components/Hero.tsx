@@ -87,7 +87,7 @@ export const Hero: React.FC = () => {
             onRelease: function () {
               gsap.to(this.target, {
                 scale: 1,
-                zIndex: 30,
+                zIndex: 20,
                 duration: 0.45,
                 ease: 'back.out(2)',
               });
@@ -174,7 +174,7 @@ export const Hero: React.FC = () => {
           ISSUE VOL. 74
         </span>
         <span className="font-script text-primary text-xl hidden sm:inline-block">
-          Devoloper Edition
+          Full Stack Edition
         </span>
       </div>
 
@@ -190,20 +190,21 @@ export const Hero: React.FC = () => {
       {/* Giant Typography Centerpiece */}
       <div
         ref={titleRef}
-        className="relative z-10 flex flex-col items-center justify-center text-center px-4 w-full select-none"
+        className="relative z-40 flex flex-col items-center justify-center text-center px-4 w-full select-none pointer-events-none"
       >
-        <h1 className="font-display font-black text-ink text-[clamp(80px,15vw,200px)] leading-[0.72] tracking-[-0.09em] uppercase flex flex-col items-center justify-center m-0 p-0 drop-shadow-sm">          <div className="overflow-hidden py-1">
-          <span className="inline-block">{renderLetters('PORT')}</span>
-        </div>
+        <h1 className="font-display font-black text-ink text-[clamp(80px,15vw,200px)] leading-[0.72] tracking-[-0.09em] uppercase flex flex-col items-center justify-center m-0 p-0 drop-shadow-sm">
+          <div className="overflow-hidden py-1">
+            <span className="inline-block">{renderLetters('PORT')}</span>
+          </div>
           <div className="overflow-hidden py-1">
             <span className="inline-block">{renderLetters('FOLIO')}</span>
           </div>
         </h1>
 
-        {/* Script subtitle overlapping the typography */}
-        <p className="font-script text-primary text-3xl sm:text-5xl md:text-6xl -mt-6 sm:-mt-10 md:-mt-14 z-30 drop-shadow-[2px_2px_0px_#ffffff] rotate-[-4deg]">
-          creative designer & visual artist
-        </p>
+        {/* Script subtitle overlapping the typography - in front of all stickers */}
+        <h2 className="font-script text-primary text-3xl sm:text-5xl md:text-6xl -mt-6 sm:-mt-10 md:-mt-14 z-50 drop-shadow-[3px_3px_0px_#ffffff] rotate-[-4deg] pointer-events-auto">
+          Full Stack &amp; Mobile Developer
+        </h2>
       </div>
 
       {/* Scattered Retro Stickers */}
@@ -216,7 +217,7 @@ export const Hero: React.FC = () => {
         rotation={-12}
         depth={0.8}
         boundsRef="#hero-container"
-        className="top-[10%] left-[4%] sm:left-[8%] md:left-[10%] z-30"
+        className="top-[10%] left-[4%] sm:left-[8%] md:left-[10%] z-20"
       />
 
       {/* 2. GOOD VIBES Neon Lime Starburst (Top Right) */}
@@ -228,7 +229,7 @@ export const Hero: React.FC = () => {
         rotation={14}
         depth={1.2}
         boundsRef="#hero-container"
-        className="top-[12%] right-[4%] sm:right-[10%] z-30"
+        className="top-[12%] right-[4%] sm:right-[10%] z-20"
       />
 
       {/* 3. COOL Badge (Middle Left overlapping letters) */}
@@ -240,7 +241,7 @@ export const Hero: React.FC = () => {
         rotation={-8}
         depth={0.5}
         boundsRef="#hero-container"
-        className="top-[46%] left-[3%] sm:left-[6%] z-30"
+        className="top-[46%] left-[3%] sm:left-[6%] z-20"
       />
 
       {/* 4. Gaming Controller (Bottom Left) */}
@@ -252,7 +253,7 @@ export const Hero: React.FC = () => {
         rotation={9}
         depth={1.0}
         boundsRef="#hero-container"
-        className="bottom-[8%] left-[6%] sm:left-[12%] z-30"
+        className="bottom-[8%] left-[6%] sm:left-[12%] z-20"
       />
 
       {/* 5. GOOD MOOD Shield (Bottom Right) */}
@@ -264,7 +265,7 @@ export const Hero: React.FC = () => {
         rotation={-10}
         depth={0.9}
         boundsRef="#hero-container"
-        className="bottom-[8%] right-[6%] sm:right-[12%] z-30"
+        className="bottom-[8%] right-[6%] sm:right-[12%] z-20"
       />
 
       {/* Desktop-only secondary stickers to prevent mobile clutter */}
@@ -279,7 +280,7 @@ export const Hero: React.FC = () => {
             rotation={12}
             depth={1.1}
             boundsRef="#hero-container"
-            className="top-[45%] right-[5%] z-30"
+            className="top-[45%] right-[5%] z-20"
           />
 
           {/* 7. Sparkle Star (Center Top) */}
@@ -291,7 +292,7 @@ export const Hero: React.FC = () => {
             rotation={-5}
             depth={0.4}
             boundsRef="#hero-container"
-            className="top-[8%] left-[44%] z-30"
+            className="top-[8%] left-[44%] z-20"
           />
 
           {/* 8. 70s Smiley Face (Center Bottom) */}
@@ -299,11 +300,11 @@ export const Hero: React.FC = () => {
             id="sticker-smiley"
             src="/stickers/smiley.svg"
             alt="70s Cartoon Smiley Sticker"
-            width={110}
+            width={100}
             rotation={8}
             depth={0.7}
             boundsRef="#hero-container"
-            className="bottom-[12%] left-[45%] z-30"
+            className="bottom-[7%] left-[45%] z-20"
           />
 
           {/* 9. Cassette Mixtape (Near top right of title) */}
@@ -315,7 +316,7 @@ export const Hero: React.FC = () => {
             rotation={-7}
             depth={0.6}
             boundsRef="#hero-container"
-            className="top-[28%] right-[18%] z-30"
+            className="top-[28%] right-[18%] z-20"
           />
         </>
       )}

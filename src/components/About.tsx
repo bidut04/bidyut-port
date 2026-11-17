@@ -89,7 +89,7 @@ export const About: React.FC = () => {
     >
       {/* Decorative background watermark */}
       <div className="absolute right-[-4%] top-10 select-none pointer-events-none opacity-[0.03] font-display text-[20vw] leading-none text-ink">
-        ARTIST
+        DEVELOPER
       </div>
 
       <div className="max-w-7xl mx-auto">

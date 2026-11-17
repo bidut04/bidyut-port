@@ -136,7 +136,7 @@ export const Resume: React.FC = () => {
                 </defs>
                 <text className="font-display text-[9.5px] fill-white uppercase tracking-[1.8px] font-black">
                   <textPath href="#circlePath" startOffset="0%">
-                    ★ RETRO DESIGNER ★ VERIFIED PRO
+                    ★ FULL STACK DEV ★ VERIFIED PRO
                   </textPath>
                 </text>
               </svg>

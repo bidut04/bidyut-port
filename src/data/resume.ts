@@ -36,7 +36,7 @@ export interface ResumeData {
 export const resumeData: ResumeData = {
   name: 'Bidyut Kumar Bhowmick',
 
-  title: 'Full Stack Developer',
+  title: 'Full Stack & Mobile Developer',
 
   bio: "I'm a passionate Full Stack Developer specializing in building scalable, responsive, and user-friendly web and mobile applications. I work with modern technologies like React, TypeScript, Next.js, Node.js, Express.js, React Native, and PostgreSQL/MySQL databases. I enjoy architecting clean, maintainable systems, crafting engaging user interfaces, and delivering production-ready digital products with high performance and accessibility.",
 
