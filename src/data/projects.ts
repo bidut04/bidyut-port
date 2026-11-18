@@ -4,6 +4,11 @@ export interface Project {
   title: string;
   category: string;
   description: string;
+  summary?: string;
+  problem?: string;
+  features?: string[];
+  contribution?: string;
+  keywords?: string[];
   thumbnail: string;
   gallery: string[];
   tools: string[];
@@ -19,7 +24,19 @@ export const projectsData: Project[] = [
     number: '01',
     title: 'Retro Portfolio',
     category: 'Full Stack & Creative Web Application',
+    summary: 'High-performance personal developer portfolio blending an interactive 90s sticker-collage aesthetic with modern web performance.',
     description: 'A responsive, high-performance personal portfolio website engineered with a 90s sticker-collage aesthetic. Features cream paper textures, oversized Archivo Black display typography, handwritten script accents, draggable cartoon SVG stickers, 60fps Lenis smooth scrolling, GSAP interactive animations, and cinematic project transitions.',
+    problem: 'Developer portfolios often look identical and template-driven. This project solves portfolio fatigue by pairing tactile, memorable visual interactions with strict 60fps performance and WCAG accessible heading structures.',
+    features: [
+      'Hardware-accelerated GSAP canvas transitions',
+      'Physics-based Draggable cartoon sticker engine',
+      'Synchronized Lenis 60fps smooth scrolling',
+      'Accessible full-screen project modal viewer',
+      'Automated standard PDF resume generator',
+      'SEO & GEO semantic structured JSON-LD schema'
+    ],
+    contribution: 'Designed the complete UI/UX, engineered custom canvas-based hand transitions, integrated Lenis scroll listeners with GSAP ScrollTrigger, and achieved a 100 Performance & SEO audit score.',
+    keywords: ['Creative Developer Portfolio', 'React GSAP Portfolio', 'Lenis Smooth Scroll', 'TypeScript Web App', 'Retro Sticker UI'],
     thumbnail: '/images/projects/project-portfolio.jpg',
     gallery: [
       '/images/projects/project-portfolio.jpg',
@@ -38,7 +55,18 @@ export const projectsData: Project[] = [
     number: '02',
     title: 'Travel Booking',
     category: 'Tours, Flights & Hotel Booking Platform',
+    summary: 'Modern travel booking platform featuring interactive tour packages, flight reservations, hotel bookings, and an integrated AI travel assistant.',
     description: 'An intuitive, modern travel booking web application featuring interactive tour packages, flight reservations, hotel bookings, destination showcases, and an integrated AI assistant (Taxidia AI). Built with clean responsive design, card carousels, and real-time travel exploration.',
+    problem: 'Travel websites often overwhelm users with cluttered, fragmented booking steps. Taxidia streamlines the journey with intuitive package discovery, real-time pricing cards, and interactive destination guides.',
+    features: [
+      'Multi-category reservation flow (flights, hotels, tours)',
+      'Responsive destination discovery carousels',
+      'Integrated conversational AI travel assistant (Taxidia AI)',
+      'Real-time filterable package cards and search',
+      'Mobile-first responsive booking interface'
+    ],
+    contribution: 'Built the end-to-end responsive frontend architecture, developed reusable booking card components, integrated asynchronous search filtering, and deployed to Netlify with continuous CI/CD.',
+    keywords: ['Travel Booking Web App', 'Flight Reservation React', 'Interactive Booking Platform', 'Tailwind Travel UI'],
     thumbnail: '/images/projects/project-travel.jpg',
     gallery: [
       '/images/projects/project-travel.jpg',
@@ -57,7 +85,18 @@ export const projectsData: Project[] = [
     number: '03',
     title: 'Agomoni Sangha',
     category: 'Cultural Festival & Event Platform',
+    summary: 'Culturally rich digital portal for Bengal\'s Durga Puja featuring real-time festival countdowns, schedule tracking, and online donation processing.',
     description: 'A vibrant, culturally rich web portal dedicated to Bengal\'s grandest festival, Durga Puja. Features real-time countdown clocks, festival schedules, pandal discovery, cultural competition registrations, online donation (Chanda) integration, and an embedded devotional theme music player.',
+    problem: 'Large-scale cultural festivals struggle with centralized information dissemination for pandal visitors, registration management, and transparent digital donation collection.',
+    features: [
+      'Live real-time festival countdown clocks (days, hours, mins, secs)',
+      'Interactive puja ritual schedules & pandal directories',
+      'Cultural competition registration forms',
+      'Online digital Chanda donation gateway integration',
+      'Embedded HTML5 devotional theme music player with persistent state'
+    ],
+    contribution: 'Engineered the responsive festival portal, built persistent state management for cultural registrations, integrated an embedded HTML5 audio player with background playback, and optimized media delivery for mobile bandwidth.',
+    keywords: ['Durga Puja Portal', 'Festival Event Management Web App', 'Donation Chanda Platform', 'React Cultural Portal'],
     thumbnail: '/images/projects/project-agomoni.jpg',
     gallery: [
       '/images/projects/project-agomoni.jpg',
@@ -76,7 +115,18 @@ export const projectsData: Project[] = [
     number: '04',
     title: 'Dev Docs',
     category: 'Developer Platform & Documentation System',
+    summary: 'All-in-one developer documentation and knowledge platform combining tech stack guides, code libraries, and instant search.',
     description: 'An all-in-one developer documentation and knowledge platform combining tech stack guides, interactive libraries, and productivity tools. Built with a sleek dark aesthetic, emerald neon accents, instant search, and responsive code reference layouts.',
+    problem: 'Developers lose productive hours navigating disparate, slow documentation across fragmented library repositories. Dev Docs centralizes developer guides and syntax references in a low-latency, dark-mode platform.',
+    features: [
+      'Instant client-side fuzzy search across documentation',
+      'Custom syntax-highlighted code blocks with 1-click copy',
+      'Responsive sticky side navigation for quick section jumping',
+      'Categorized tech stack library indexes and cheat sheets',
+      'High-contrast dark mode optimized for long coding sessions'
+    ],
+    contribution: 'Architected the knowledgebase navigation hierarchy, implemented sub-millisecond search indexing, styled custom accessible syntax-highlighting containers, and engineered keyboard shortcuts for power users.',
+    keywords: ['Developer Documentation Platform', 'DevDocs React', 'Code Reference Knowledgebase', 'Tech Stack Guides'],
     thumbnail: '/images/projects/project-devdocs.jpg',
     gallery: [
       '/images/projects/project-devdocs.jpg',
@@ -95,7 +145,18 @@ export const projectsData: Project[] = [
     number: '05',
     title: 'SolarNext Energy',
     category: 'CleanTech & Energy Engineering Platform',
+    summary: 'CleanTech web platform engineered for commercial and residential solar installations, real-time plant telemetry monitoring, and ROI estimation.',
     description: 'A modern clean-energy web platform engineered for solar power installations, smart telemetry monitoring, and savings estimation. Features real-time plant telemetry metrics, interactive solar ROI calculators, instant consultation booking, and commercial project showcases.',
+    problem: 'Prospective solar customers struggle to calculate cost savings and visualize production yield, resulting in low conversion rates for renewable energy engineering firms.',
+    features: [
+      'Active plant telemetry metrics (50.4 MW output, 98.9% efficiency, 74k T CO2 offset)',
+      'Interactive mathematical solar savings and ROI calculator',
+      'Commercial and residential clean-energy installation showcases',
+      'Instant online consultation and estimate booking workflows',
+      'Responsive design with dynamic telemetry indicators'
+    ],
+    contribution: 'Developed the mathematical ROI estimation algorithms, engineered real-time telemetry dashboard widgets with dynamic indicators, and built responsive lead-generation forms with validation.',
+    keywords: ['Solar Energy Web App', 'CleanTech Platform', 'Solar ROI Calculator', 'Renewable Energy Telemetry Dashboard'],
     thumbnail: '/images/projects/project-solarnext.jpg',
     gallery: [
       '/images/projects/project-solarnext.jpg',
@@ -114,7 +175,18 @@ export const projectsData: Project[] = [
     number: '06',
     title: 'Journey Fleet App',
     category: 'Mobile Application (iOS & Android)',
+    summary: 'Native-performance mobile application for intercity bus ticketing, seat reservations, and private whole-fleet mountain charters.',
     description: 'An intuitive, modern bus booking and fleet charter mobile application. Features real-time trending fleet exploration, luxury coach & sleeper seat reservation, private full-fleet mountain charters, and seamless passenger booking workflows.',
+    problem: 'Regional passenger transport requires flexible booking flows that accommodate individual seat reservations on scheduled routes alongside bespoke, whole-vehicle private fleet charters.',
+    features: [
+      'Trending fleet exploration with vehicle category filtering',
+      'Interactive luxury coach and sleeper berth seat reservation',
+      'Bespoke whole-vehicle private mountain charter booking workflows',
+      'Travel moments and passenger fleet highlights reel',
+      'Custom contained smartphone bezel showcase for web preview'
+    ],
+    contribution: 'Engineered the cross-platform mobile UI using React Native & Expo, built native touch gesture interactions, handled device-specific aspect ratios, and designed clean passenger reservation workflows.',
+    keywords: ['React Native Bus Booking App', 'Fleet Charter Mobile App', 'Expo Mobile Application', 'Cross-Platform Mobile UI'],
     thumbnail: '/images/projects/project-bus-app-thumb.jpg',
     gallery: [
       '/images/projects/project-bus-app-1.jpg',

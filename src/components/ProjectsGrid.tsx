@@ -128,7 +128,7 @@ export const ProjectsGrid: React.FC = () => {
           <div className="inline-block relative">
             <h2
               ref={headingRef}
-              className="font-script text-primary text-6xl sm:text-6xl md:text-8xl lg:text-[100px] leading-none script-reveal"
+              className="font-script text-primary text-5xl sm:text-6xl md:text-7xl lg:text-[85px] leading-none script-reveal"
             >
               Projects
             </h2>

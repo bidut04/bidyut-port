@@ -16,6 +16,13 @@ export interface SoftwareItem {
   percentage: number;
 }
 
+export interface TechCategory {
+  title: string;
+  badge: string;
+  description: string;
+  skills: string[];
+}
+
 export interface ResumeData {
   name: string;
   title: string;
@@ -30,6 +37,7 @@ export interface ResumeData {
   experience: ResumeItem[];
   languages: LanguageItem[];
   skills: string[];
+  categories: TechCategory[];
   software: SoftwareItem[];
 }
 
@@ -38,7 +46,7 @@ export const resumeData: ResumeData = {
 
   title: 'Full Stack & Mobile Developer',
 
-  bio: "I'm a passionate Full Stack Developer specializing in building scalable, responsive, and user-friendly web and mobile applications. I work with modern technologies like React, TypeScript, Next.js, Node.js, Express.js, React Native, and PostgreSQL/MySQL databases. I enjoy architecting clean, maintainable systems, crafting engaging user interfaces, and delivering production-ready digital products with high performance and accessibility.",
+  bio: "I help founders, businesses, and engineering teams transform complex requirements into fast, reliable digital products. With a solid foundation in computer science and modern software engineering from BITM, I bridge intuitive UI/UX design with scalable, secure backend systems across React, TypeScript, Node.js, and React Native.",
 
   contacts: [
     {
@@ -85,14 +93,14 @@ export const resumeData: ResumeData = {
       role: 'Bachelor of Computer Applications (BCA)',
       organization: 'Bengal Institute of Technology & Management (BITM)',
       period: '2021 – 2024',
-      description: 'Graduated with a comprehensive focus on computer science principles, data structures, algorithms, relational database systems, and modern full-stack web engineering.'
+      description: 'Graduated with core coursework in Data Structures & Algorithms, Object-Oriented Programming, Relational Database Management Systems (RDBMS/SQL), Computer Networks, and Full-Stack Web Architecture.'
     },
     {
       id: 'edu-2',
       role: 'Higher Secondary Education (Science & Computer Application)',
       organization: 'Daspur Vivekananda High School',
       period: '2019 – 2021',
-      description: 'Completed Higher Secondary schooling with academic specialization in Mathematics, Physics, Chemistry, and Computer Applications, establishing a strong analytical and programming base.'
+      description: 'Completed Higher Secondary education with specialization in Mathematics, Physics, Chemistry, and Computer Applications, establishing a rigorous analytical, algorithmic, and computational foundation.'
     }
   ],
 
@@ -102,14 +110,14 @@ export const resumeData: ResumeData = {
       role: 'Full Stack Web & Application Developer',
       organization: 'Freelance & Production Projects',
       period: '2023 – Present',
-      description: 'Engineering production web & mobile applications using React, TypeScript, Next.js, Node.js, and PostgreSQL. Architecting RESTful APIs with secure JWT authentication, designing responsive retro & modern UI components, and integrating robust database layers using Prisma ORM.'
+      description: 'Engineered and shipped production web and mobile solutions for clients and independent projects. Developed performant RESTful APIs using Node.js and Express, integrated relational databases (PostgreSQL/MySQL) via Prisma ORM, implemented secure JWT authentication, and optimized frontend bundles achieving 95+ performance metrics.'
     },
     {
       id: 'exp-2',
       role: 'Frontend & Mobile Application Engineer',
       organization: 'Production Web & Mobile Solutions',
       period: '2022 – Present',
-      description: 'Built cross-platform solutions including the Journey Fleet mobile booking app (React Native/Expo), DevDocs platform, SolarNext energy portal, and Agomoni cultural festival web application with custom audio players and interactive animations.'
+      description: 'Architected client-facing web portals and native mobile applications, including the Journey Fleet transit booking app with React Native/Expo, the DevDocs developer knowledge platform, and the SolarNext CleanTech telemetry portal with real-time indicators and interactive ROI calculations.'
     }
   ],
 
@@ -140,6 +148,45 @@ export const resumeData: ResumeData = {
     'TanStack Query',
     'HTML5 & CSS3',
     'Problem Solving'
+  ],
+
+  categories: [
+    {
+      title: 'Frontend Engineering',
+      badge: 'UI & Architecture',
+      description: 'Building responsive, type-safe web applications with optimized Core Web Vitals and component reusability.',
+      skills: ['React 18', 'Next.js', 'TypeScript', 'JavaScript (ES6+)', 'Tailwind CSS', 'TanStack Query', 'HTML5 & Semantic Web']
+    },
+    {
+      title: 'Backend & API Architecture',
+      badge: 'Server & APIs',
+      description: 'Architecting secure, scalable RESTful APIs, webhook handlers, and middleware services with stateless JWT authentication.',
+      skills: ['Node.js', 'Express.js', 'REST APIs', 'JWT Auth', 'Middleware Architecture', 'API Security']
+    },
+    {
+      title: 'Mobile Development',
+      badge: 'iOS & Android',
+      description: 'Engineering cross-platform mobile apps with fluid gesture navigation, offline caching, and responsive native UI.',
+      skills: ['React Native', 'Expo', 'Mobile UI Design', 'Cross-Platform Architecture', 'Native Device APIs']
+    },
+    {
+      title: 'Databases & Data Modeling',
+      badge: 'Storage & ORM',
+      description: 'Designing relational data schemas, managing ACID-compliant transactions, and optimizing query performance.',
+      skills: ['PostgreSQL', 'MySQL', 'Prisma ORM', 'Oracle Database', 'Relational Schema Design']
+    },
+    {
+      title: 'UI/UX & Motion Engineering',
+      badge: 'Interactive Experience',
+      description: 'Crafting tactile digital experiences with 60fps hardware-accelerated animations and accessible interactive states.',
+      skills: ['GSAP (ScrollTrigger & Draggable)', 'Lenis Smooth Scroll', 'Canvas 2D Rendering', 'Retro Collage UI', 'Responsive Design']
+    },
+    {
+      title: 'DevOps & Tooling',
+      badge: 'Workflow & CI/CD',
+      description: 'Employing modern version control workflows, automated type-checking, and continuous deployment across cloud platforms.',
+      skills: ['Git', 'GitHub', 'Vite', 'Postman', 'Vercel', 'Netlify', 'npm & Node Tooling']
+    }
   ],
 
   software: [

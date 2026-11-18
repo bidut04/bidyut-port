@@ -154,7 +154,7 @@ export const About: React.FC = () => {
             <div className="relative mb-2">
               <h2
                 ref={headingRef}
-                className="font-script text-primary text-7xl sm:text-8xl lg:text-9xl leading-none select-none script-reveal"
+                className="font-script text-primary text-6xl sm:text-7xl lg:text-8xl leading-none select-none script-reveal"
               >
                 Hello
               </h2>
@@ -168,17 +168,32 @@ export const About: React.FC = () => {
             </div>
 
             {/* My name is Your Name */}
-            <h3 className="font-body font-bold text-ink text-2xl sm:text-3xl lg:text-4xl tracking-tight mb-6">
+            <h3 className="font-body font-bold text-ink text-2xl sm:text-3xl lg:text-4xl tracking-tight mb-2">
               My name is{' '}
               <span className="font-display text-accent underline decoration-primary decoration-4 underline-offset-4">
                 {resumeData.name}
               </span>
             </h3>
 
-            {/* Editorial Biography paragraph */}
-            <p className="font-body text-ink text-base sm:text-lg leading-relaxed text-left lg:text-justify mb-6 text-[#2A2A2A]">
-              {resumeData.bio}
+            {/* Professional Subheading Badge */}
+            <p className="font-display text-accent text-xs sm:text-sm uppercase tracking-wider font-bold mb-5 flex flex-wrap items-center gap-2">
+              <span>Full-Stack &amp; Cross-Platform Product Engineer</span>
+              <span>•</span>
+              <span className="text-primary">BCA Graduate (BITM)</span>
             </p>
+
+            {/* Editorial Biography paragraphs */}
+            <div className="space-y-3.5 font-body text-ink text-sm sm:text-base leading-relaxed text-left mb-6 text-[#2A2A2A]">
+              <p>
+                I help founders, businesses, and engineering teams transform complex requirements into fast, reliable digital products. With a solid foundation in computer science and modern software engineering from BITM, I bridge intuitive UI/UX design with scalable, secure backend systems.
+              </p>
+              <p>
+                Using <strong className="font-bold text-ink">React, TypeScript, Node.js, and React Native</strong>, I develop software that powers real-world workflows — from fleet charter mobile reservation systems (Journey Fleet) and clean-energy telemetry portals (SolarNext) to developer knowledge platforms (DevDocs). On the backend, I build scalable REST architectures with Node.js, Express, and PostgreSQL, focusing on high data integrity, low-latency API response times, and frictionless booking experiences.
+              </p>
+              <p>
+                I believe great software is fast, accessible, and maintainable. I write clean, type-safe code, eliminate UI friction, and ship production-ready applications that deliver immediate business value.
+              </p>
+            </div>
 
             {/* Quick Action Badges */}
             <div className="flex flex-wrap items-center gap-3 mb-8">

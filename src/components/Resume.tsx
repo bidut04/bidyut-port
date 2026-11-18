@@ -117,7 +117,7 @@ export const Resume: React.FC = () => {
         <div className="flex flex-wrap items-center gap-6 mb-16 md:mb-20">
           <h2
             ref={headingRef}
-            className="font-script text-primary text-7xl sm:text-8xl lg:text-9xl leading-none select-none script-reveal"
+            className="font-script text-primary text-6xl sm:text-7xl lg:text-8xl leading-none select-none script-reveal"
           >
             Resume
           </h2>
@@ -126,7 +126,7 @@ export const Resume: React.FC = () => {
           <div className="relative flex items-center justify-center">
             <div
               ref={badgeRef}
-              className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-accent border-2 border-ink shadow-sticker flex items-center justify-center select-none cursor-pointer"
+              className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-accent border-2 border-ink shadow-sticker flex items-center justify-center select-none cursor-pointer"
             >
               <svg viewBox="0 0 100 100" className="w-full h-full p-1">
                 <defs>
@@ -142,8 +142,8 @@ export const Resume: React.FC = () => {
                 </text>
               </svg>
               {/* Center icon badge */}
-              <div className="absolute w-10 h-10 rounded-full bg-pop border-2 border-ink flex items-center justify-center shadow-inner">
-                <span className="font-display text-sm text-ink font-black">70s</span>
+              <div className="absolute w-8 h-8 rounded-full bg-pop border-2 border-ink flex items-center justify-center shadow-inner">
+                <span className="font-display text-xs text-ink font-black">70s</span>
               </div>
             </div>
           </div>
@@ -237,12 +237,34 @@ export const Resume: React.FC = () => {
               </div>
             </div>
 
+            {/* Languages Section - Moved to Left Side under Education */}
+            <div className="bg-white p-5 sm:p-6 rounded-3xl border-2 border-border shadow-sm">
+              <h4 className="font-display uppercase text-primary text-sm tracking-widest mb-4 flex items-center justify-between">
+                <span>Languages</span>
+                <span className="w-2 h-2 rounded-full bg-accent" />
+              </h4>
+              <div className="flex flex-wrap gap-2.5">
+                {resumeData.languages.map((lang, index) => (
+                  <span
+                    key={index}
+                    className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#F9F8F5] border border-border rounded-full text-xs font-body font-semibold text-ink shadow-sm"
+                  >
+                    <span>{lang.name}</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+                    <span className="text-muted text-[11px] font-normal italic">{lang.level}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Software Proficiency - Moved to Left Side under Education */}
+            <SoftwareBars />
+
           </div>
 
-          {/* Right Column: LANGUAGES, SKILLS & SOFTWARE (6 cols) */}
+          {/* Right Column: TECHNICAL CAPABILITIES & DOMAINS (6 cols) */}
           <div className="lg:col-span-6 space-y-8">
             <SkillsPills />
-            <SoftwareBars />
           </div>
 
         </div>

@@ -3,7 +3,7 @@ import { useGSAP } from '@gsap/react';
 import { gsap } from '../lib/gsap';
 import { resumeData } from '../data/resume';
 import { Sticker } from './Sticker';
-import { ArrowUp, Mail, Send, Copy, Check } from 'lucide-react';
+import { ArrowUp, Mail, Send, Copy, Check, FileDown } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   const containerRef = useRef<HTMLElement>(null);
@@ -87,41 +87,49 @@ export const Contact: React.FC = () => {
 
         {/* Main Combined Typography: "LET'S WORK" + "together" */}
         <div className="contact-title relative inline-block mb-10 select-none">
-          <h2 className="font-display font-black text-primary text-5xl sm:text-7xl md:text-8xl lg:text-9xl uppercase tracking-tight leading-none">
+          <h2 className="font-display font-black text-primary text-4xl sm:text-6xl md:text-7xl lg:text-8xl uppercase tracking-tight leading-none">
             LET&apos;S WORK
           </h2>
-          <span className="font-script text-accent text-6xl sm:text-8xl md:text-9xl lg:text-[130px] absolute -bottom-6 sm:-bottom-10 left-1/2 -translate-x-1/2 rotate-[-5deg] drop-shadow-[2px_2px_0px_#ffffff] z-20 whitespace-nowrap">
+          <span className="font-script text-accent text-5xl sm:text-7xl md:text-8xl lg:text-[105px] absolute -bottom-5 sm:-bottom-8 left-1/2 -translate-x-1/2 rotate-[-5deg] drop-shadow-[2px_2px_0px_#ffffff] z-20 whitespace-nowrap">
             together
           </span>
         </div>
 
         {/* Services Badges */}
-        <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3.5 max-w-xl mx-auto mt-10 mb-5">
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-2xl mx-auto mt-10 mb-5">
           <span className="font-display text-xs sm:text-sm font-bold uppercase tracking-wider px-3.5 py-1.5 bg-pop text-ink border-2 border-ink rounded-full shadow-sticker -rotate-2 hover:rotate-0 transition-transform">
-            ⚡ Custom Websites
+            ⚡ Full-Stack Web Platforms
           </span>
           <span className="font-display text-xs sm:text-sm font-bold uppercase tracking-wider px-3.5 py-1.5 bg-white text-ink border-2 border-ink rounded-full shadow-sticker rotate-1 hover:rotate-0 transition-transform">
-            ⚙️ Custom CRMs
+            📱 React Native Mobile Apps
           </span>
-          <span className="font-display text-xs sm:text-sm font-bold uppercase tracking-wider px-3.5 py-1.5 bg-accent text-ink border-2 border-ink rounded-full shadow-sticker -rotate-1 hover:rotate-0 transition-transform">
-            📱 Mobile Apps
+          <span className="font-display text-xs sm:text-sm font-bold uppercase tracking-wider px-3.5 py-1.5 bg-accent text-white border-2 border-ink rounded-full shadow-sticker -rotate-1 hover:rotate-0 transition-transform">
+            ⚙️ REST APIs &amp; Databases
+          </span>
+          <span className="font-display text-xs sm:text-sm font-bold uppercase tracking-wider px-3.5 py-1.5 bg-[#B9CCFF] text-ink border-2 border-ink rounded-full shadow-sticker rotate-2 hover:rotate-0 transition-transform">
+            🚀 UI/UX &amp; High Performance
           </span>
         </div>
 
         {/* Short invitation message */}
-        <p className="font-body text-base sm:text-lg text-ink/80 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Need a blazing-fast custom website, an automated CRM to streamline your workflow, or an intuitive mobile app built from the ground up? From concept &amp; UI/UX to clean, robust code — let&apos;s turn your vision into high-impact digital products.
+        <p className="font-body text-base sm:text-lg text-ink/80 max-w-2xl mx-auto mb-4 leading-relaxed">
+          Available for full-time software engineering roles, high-impact freelance contracts, and startup collaboration. Whether you need an accessible web platform, a cross-platform mobile app, or a secure backend API — let&apos;s build something extraordinary together.
         </p>
 
-        {/* Email CTA + 1-Click Copy Conversion Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-12">
+        {/* Remote Worldwide Response Tag */}
+        <p className="font-display text-xs uppercase tracking-widest text-muted mb-10">
+          📍 West Bengal, India • Remote Worldwide • Responding within 24 Hours
+        </p>
+
+        {/* Email CTA + 1-Click Copy + Resume Download Conversion Buttons */}
+        <div className="flex flex-wrap items-center justify-center gap-3.5 mb-12">
           <a
             href="mailto:barunbhowmick727@gmail.com?subject=Let's%20Work%20Together"
-            className="email-btn inline-flex items-center gap-3 px-7 sm:px-10 py-4 sm:py-5 bg-accent text-ink font-display text-base sm:text-xl uppercase tracking-wider rounded-full border-4 border-ink shadow-sticker-lg hover:bg-pop hover:-rotate-1 hover:scale-105 active:scale-95 transition-all group"
+            className="email-btn inline-flex items-center gap-3 px-6 sm:px-9 py-4 sm:py-5 bg-accent text-white font-display text-sm sm:text-lg uppercase tracking-wider rounded-full border-4 border-ink shadow-sticker-lg hover:bg-pop hover:text-ink hover:-rotate-1 hover:scale-105 active:scale-95 transition-all group"
           >
-            <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-ink group-hover:rotate-12 transition-transform" />
+            <Mail className="w-5 h-5 text-white group-hover:text-ink group-hover:rotate-12 transition-transform" />
             <span>barunbhowmick727@gmail.com</span>
-            <Send className="w-4 h-4 sm:w-5 sm:h-5 text-ink ml-1" />
+            <Send className="w-4 h-4 text-white group-hover:text-ink ml-1" />
           </a>
 
           <button
@@ -142,6 +150,15 @@ export const Contact: React.FC = () => {
               </>
             )}
           </button>
+
+          <a
+            href="/resume.pdf"
+            download="Bidyut_Kumar_Bhowmick_Resume.pdf"
+            className="inline-flex items-center gap-2 px-5 py-4 sm:py-5 bg-pop text-ink font-display text-xs sm:text-sm uppercase tracking-wider rounded-full border-3 border-ink shadow-sticker hover:bg-accent hover:text-white active:scale-95 transition-all"
+          >
+            <FileDown className="w-4 h-4" />
+            <span>Resume (PDF)</span>
+          </a>
         </div>
 
         {/* Social Links Row */}

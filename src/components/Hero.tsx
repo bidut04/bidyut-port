@@ -4,6 +4,7 @@ import { gsap, Draggable } from '../lib/gsap';
 import { PlasticOverlay } from './PlasticOverlay';
 import { Sticker } from './Sticker';
 import { useIsMobile } from '../hooks/useIsMobile';
+import { FileDown } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -180,7 +181,7 @@ export const Hero: React.FC = () => {
 
       {/* Primary Semantic H1 for SEO Search Engines & Accessibility */}
       <h1 className="sr-only">
-        Bidyut Kumar Bhowmick — Full Stack &amp; Mobile Developer Portfolio
+        Bidyut Kumar Bhowmick — Full-Stack Web &amp; Mobile Developer
       </h1>
 
       {/* Giant Typography Centerpiece */}
@@ -189,7 +190,7 @@ export const Hero: React.FC = () => {
         aria-hidden="true"
         className="relative z-40 flex flex-col items-center justify-center text-center px-4 w-full select-none pointer-events-none"
       >
-        <div className="font-display font-black text-ink text-[clamp(80px,15vw,200px)] leading-[0.72] tracking-[-0.09em] uppercase flex flex-col items-center justify-center m-0 p-0 drop-shadow-sm">
+        <div className="font-display font-black text-ink text-[clamp(64px,12vw,160px)] leading-[0.72] tracking-[-0.09em] uppercase flex flex-col items-center justify-center m-0 p-0 drop-shadow-sm">
           <div className="overflow-hidden py-1">
             <span className="inline-block">{renderLetters('PORT')}</span>
           </div>
@@ -199,9 +200,38 @@ export const Hero: React.FC = () => {
         </div>
 
         {/* Script subtitle overlapping the typography - in front of all stickers */}
-        <h2 className="font-script text-primary text-3xl sm:text-5xl md:text-6xl -mt-6 sm:-mt-10 md:-mt-14 z-50 drop-shadow-[3px_3px_0px_#ffffff] rotate-[-4deg] pointer-events-auto">
-          Full Stack &amp; Mobile Developer
+        <h2 className="font-script text-primary text-2xl sm:text-4xl md:text-5xl -mt-4 sm:-mt-8 md:-mt-10 z-50 drop-shadow-[3px_3px_0px_#ffffff] rotate-[-4deg] pointer-events-auto">
+          Full-Stack Web &amp; Mobile Developer
         </h2>
+
+        {/* Hybrid Supporting Value Proposition */}
+        <p className="font-body text-xs sm:text-[13px] md:text-sm text-[#2A2A2A] font-medium max-w-xl mx-auto mt-2.5 sm:mt-3 leading-relaxed drop-shadow-[1px_1px_0px_#ffffff] pointer-events-auto px-4">
+          Building scalable web applications, cross-platform mobile apps, and robust backend systems — turning complex ideas into production-ready digital products with React, TypeScript, Node.js, and React Native.
+        </p>
+
+        {/* Action CTAs: Explore Projects + Download Resume + Contact */}
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-3 sm:mt-4 pointer-events-auto">
+          <a
+            href="#projects"
+            className="font-display text-[10px] sm:text-xs uppercase tracking-wider bg-accent text-white px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full border-2 border-ink shadow-sticker hover:bg-pop hover:text-ink hover:-translate-y-0.5 transition-all"
+          >
+            Explore Projects ↓
+          </a>
+          <a
+            href="/resume.pdf"
+            download="Bidyut_Kumar_Bhowmick_Resume.pdf"
+            className="font-display text-[10px] sm:text-xs uppercase tracking-wider bg-white text-ink px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full border-2 border-ink shadow-sticker hover:bg-soft hover:-translate-y-0.5 transition-all flex items-center gap-1.5"
+          >
+            <FileDown className="w-3.5 h-3.5 text-accent" />
+            <span>Resume (PDF)</span>
+          </a>
+          <a
+            href="#contact"
+            className="font-display text-[10px] sm:text-xs uppercase tracking-wider bg-pop text-ink px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full border-2 border-ink shadow-sticker hover:bg-accent hover:text-white hover:-translate-y-0.5 transition-all"
+          >
+            Let&apos;s Talk ⚡
+          </a>
+        </div>
       </div>
 
       {/* Scattered Retro Stickers */}
@@ -210,7 +240,7 @@ export const Hero: React.FC = () => {
         id="sticker-camera"
         src="/stickers/camera.svg"
         alt="Retro Camera Poster Sticker"
-        width={isMobile ? 120 : 190}
+        width={isMobile ? 100 : 155}
         rotation={-12}
         depth={0.8}
         boundsRef="#hero-container"
@@ -222,7 +252,7 @@ export const Hero: React.FC = () => {
         id="sticker-vibes"
         src="/stickers/good-vibes.svg"
         alt="Good Vibes Starburst Sticker"
-        width={isMobile ? 100 : 160}
+        width={isMobile ? 85 : 130}
         rotation={14}
         depth={1.2}
         boundsRef="#hero-container"
@@ -234,7 +264,7 @@ export const Hero: React.FC = () => {
         id="sticker-cool"
         src="/stickers/cool.svg"
         alt="Cool Badge Sticker"
-        width={isMobile ? 95 : 135}
+        width={isMobile ? 80 : 110}
         rotation={-8}
         depth={0.5}
         boundsRef="#hero-container"
@@ -246,7 +276,7 @@ export const Hero: React.FC = () => {
         id="sticker-controller"
         src="/stickers/controller.svg"
         alt="Retro Game Controller Sticker"
-        width={isMobile ? 110 : 165}
+        width={isMobile ? 90 : 135}
         rotation={9}
         depth={1.0}
         boundsRef="#hero-container"
@@ -258,7 +288,7 @@ export const Hero: React.FC = () => {
         id="sticker-mood"
         src="/stickers/good-mood.svg"
         alt="Good Mood Shield Sticker"
-        width={isMobile ? 100 : 140}
+        width={isMobile ? 85 : 115}
         rotation={-10}
         depth={0.9}
         boundsRef="#hero-container"
@@ -273,7 +303,7 @@ export const Hero: React.FC = () => {
             id="sticker-lightning"
             src="/stickers/lightning.svg"
             alt="Lightning Bolts with Cartoon Eyes"
-            width={140}
+            width={115}
             rotation={12}
             depth={1.1}
             boundsRef="#hero-container"
@@ -285,7 +315,7 @@ export const Hero: React.FC = () => {
             id="sticker-sparkle"
             src="/stickers/sparkle.svg"
             alt="Retro Sparkle Illustration"
-            width={90}
+            width={75}
             rotation={-5}
             depth={0.4}
             boundsRef="#hero-container"
@@ -297,11 +327,11 @@ export const Hero: React.FC = () => {
             id="sticker-smiley"
             src="/stickers/smiley.svg"
             alt="70s Cartoon Smiley Sticker"
-            width={100}
+            width={isMobile ? 55 : 70}
             rotation={8}
             depth={0.7}
             boundsRef="#hero-container"
-            className="bottom-[7%] left-[45%] z-20"
+            className="bottom-[4%] left-[46%] z-20"
           />
 
           {/* 9. Cassette Mixtape (Near top right of title) */}
@@ -309,7 +339,7 @@ export const Hero: React.FC = () => {
             id="sticker-cassette"
             src="/stickers/cassette.svg"
             alt="Retro Mixtape Cassette Sticker"
-            width={140}
+            width={115}
             rotation={-7}
             depth={0.6}
             boundsRef="#hero-container"

@@ -33,42 +33,54 @@ export const SkillsPills: React.FC = () => {
   return (
     <div ref={containerRef} className="space-y-6">
 
-      {/* Languages Box */}
-      <div>
-        <h4 className="font-display uppercase text-primary text-sm tracking-widest mb-3 flex items-center gap-2">
-          Languages
-          <span className="w-2 h-2 rounded-full bg-accent" />
-        </h4>
-        <div className="flex flex-wrap gap-2.5">
-          {resumeData.languages.map((lang, index) => (
-            <span
-              key={index}
-              className="skill-pill inline-flex items-center gap-2 px-3.5 py-1.5 bg-white border border-border rounded-full text-xs font-body font-semibold text-ink shadow-sm"
-            >
-              <span>{lang.name}</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-              <span className="text-muted text-[11px] font-normal italic">{lang.level}</span>
-            </span>
-          ))}
-        </div>
-      </div>
-
-      {/* Skills inside Ice-Blue (#B9CCFF) Rounded Panel */}
-      <div className="bg-[#B9CCFF] p-5 sm:p-6 rounded-3xl border-2 border-ink shadow-sticker">
-        <h4 className="font-display uppercase text-ink text-sm tracking-widest mb-4 flex items-center justify-between">
-          <span>Creative Expertise</span>
-          <span className="text-xs bg-pop text-ink px-2.5 py-0.5 rounded-full border border-ink font-bold">
-            SKILLS
+      {/* Structured Technical Capabilities */}
+      <div className="space-y-4">
+        <div className="flex items-center justify-between pb-2 border-b-2 border-border">
+          <h4 className="font-display uppercase text-primary text-base sm:text-lg tracking-wider flex items-center gap-2">
+            <span className="w-2.5 h-2.5 rounded-full bg-accent" />
+            <span>Technical Stack &amp; Capabilities</span>
+          </h4>
+          <span className="text-[11px] font-display uppercase tracking-widest bg-ink text-white px-2.5 py-0.5 rounded-full shadow-sm">
+            6 DOMAINS
           </span>
-        </h4>
-        <div className="flex flex-wrap gap-2">
-          {resumeData.skills.map((skill, index) => (
-            <span
-              key={index}
-              className="skill-pill inline-block px-3.5 py-1.5 bg-white border border-ink rounded-full text-xs sm:text-sm font-body font-bold text-ink shadow-[2px_2px_0px_#1A1A1A] hover:bg-pop transition-colors cursor-default"
+        </div>
+
+        {/* 6 Category Cards Grid */}
+        <div className="space-y-3.5">
+          {resumeData.categories.map((cat, i) => (
+            <div
+              key={i}
+              className={`p-4 sm:p-5 rounded-2xl border-2 border-ink shadow-sticker transition-transform hover:-translate-y-0.5 ${
+                i % 2 === 0 ? 'bg-[#B9CCFF]' : 'bg-[#FFFDF8]'
+              }`}
             >
-              {skill}
-            </span>
+              {/* Category Header */}
+              <div className="flex items-center justify-between gap-2 mb-1.5">
+                <h5 className="font-display uppercase text-ink text-xs sm:text-sm font-black tracking-wide">
+                  {cat.title}
+                </h5>
+                <span className="text-[10px] font-display font-bold uppercase tracking-wider bg-pop text-ink px-2 py-0.5 rounded-full border border-ink shadow-sm">
+                  {cat.badge}
+                </span>
+              </div>
+
+              {/* Meaningful Contextual Description */}
+              <p className="font-body text-xs text-[#2A2A2A] mb-3 leading-snug">
+                {cat.description}
+              </p>
+
+              {/* Individual Skill Pills */}
+              <div className="flex flex-wrap gap-1.5">
+                {cat.skills.map((skill, sIdx) => (
+                  <span
+                    key={sIdx}
+                    className="skill-pill inline-block px-2.5 py-1 bg-white border border-ink rounded-full text-xs font-body font-bold text-ink shadow-[1.5px_1.5px_0px_#1A1A1A] hover:bg-pop transition-colors cursor-default"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>

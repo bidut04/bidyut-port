@@ -21,7 +21,8 @@ const config: Config = {
       fontFamily: {
         display: ['"Archivo Black"', 'sans-serif'],
         script: ['"Comic Sans MS"', '"Comic Neue"', '"Chalkboard SE"', 'cursive'],
-        body: ['"Libre Baskerville"', 'serif'],
+        body: ['"Plus Jakarta Sans"', 'sans-serif'],
+        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
       },
       boxShadow: {
         sticker: '3px 4px 0px rgba(26, 26, 26, 0.85)',

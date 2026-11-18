@@ -26,15 +26,23 @@
   html {
     background-color: var(--bg);
     color: var(--ink);
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 85%;
     scroll-behavior: auto;
     /* Handled by Lenis */
     overflow-x: hidden;
   }
 
+  @media (min-width: 640px) {
+    html {
+      font-size: 80%;
+    }
+  }
+
   body {
     background-color: var(--bg);
     color: var(--ink);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     overflow-x: hidden;
     position: relative;
     background-image:

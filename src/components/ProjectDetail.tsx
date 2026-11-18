@@ -258,36 +258,127 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                 </a>
               ) : (
                 <p className="font-body text-sm font-bold text-primary">
-                  Completed & Shipped
+                  Completed &amp; Shipped
                 </p>
               )}
             </div>
+
+            {project.githubUrl && (
+              <div className="space-y-1">
+                <span className="font-display text-[11px] uppercase text-muted tracking-widest flex items-center gap-1.5">
+                  <Github className="w-3.5 h-3.5 text-accent" />
+                  Source Code
+                </span>
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-body text-sm font-bold text-ink underline truncate block hover:text-accent"
+                >
+                  View Repository ↗
+                </a>
+              </div>
+            )}
           </div>
 
-          {/* Project Narrative & Tools */}
+          {/* Project Narrative, Problem, Features & Tools */}
           <div className="detail-animate grid grid-cols-1 lg:grid-cols-12 gap-8 my-10">
-            <div className="lg:col-span-8">
-              <h2 className="font-display uppercase text-ink text-xl tracking-wider mb-4">
-                Overview & Engineering
-              </h2>
-              <p className="font-body text-ink text-base sm:text-lg leading-relaxed text-justify">
-                {project.description}
-              </p>
+            <div className="lg:col-span-8 space-y-6">
+              <div>
+                <h2 className="font-display uppercase text-ink text-xl tracking-wider mb-3">
+                  Overview &amp; Architecture
+                </h2>
+                <p className="font-body text-ink text-base sm:text-lg leading-relaxed text-justify">
+                  {project.description}
+                </p>
+              </div>
+
+              {project.problem && (
+                <div className="p-4 sm:p-5 rounded-2xl bg-white border-2 border-border shadow-sm">
+                  <h3 className="font-display uppercase text-primary text-xs sm:text-sm tracking-wider mb-2 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-accent" />
+                    <span>The Problem Solved</span>
+                  </h3>
+                  <p className="font-body text-sm text-[#2A2A2A] leading-relaxed">
+                    {project.problem}
+                  </p>
+                </div>
+              )}
+
+              {project.features && project.features.length > 0 && (
+                <div className="p-4 sm:p-5 rounded-2xl bg-white border-2 border-border shadow-sm">
+                  <h3 className="font-display uppercase text-primary text-xs sm:text-sm tracking-wider mb-3 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-accent" />
+                    <span>Key Engineering Features</span>
+                  </h3>
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs sm:text-sm font-body text-[#2A2A2A]">
+                    {project.features.map((feat, fIdx) => (
+                      <li key={fIdx} className="flex items-start gap-2">
+                        <span className="text-accent font-bold">✓</span>
+                        <span>{feat}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {project.contribution && (
+                <div className="p-4 sm:p-5 rounded-2xl bg-[#FFFDF8] border-2 border-ink shadow-sticker">
+                  <h3 className="font-display uppercase text-ink text-xs sm:text-sm tracking-wider mb-2 flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-accent" />
+                    <span>Engineering Contribution</span>
+                  </h3>
+                  <p className="font-body text-sm text-[#2A2A2A] leading-relaxed">
+                    {project.contribution}
+                  </p>
+                </div>
+              )}
             </div>
 
-            <div className="lg:col-span-4 bg-[#B9CCFF] p-6 rounded-3xl border-2 border-ink shadow-sticker">
-              <h3 className="font-display uppercase text-ink text-sm tracking-wider mb-3">
-                Technologies & Tools
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                {project.tools.map((tool, i) => (
-                  <span
-                    key={i}
-                    className="font-body text-xs font-bold bg-white text-ink px-3 py-1.5 rounded-full border border-ink shadow-sm"
+            <div className="lg:col-span-4 space-y-6">
+              <div className="bg-[#B9CCFF] p-6 rounded-3xl border-2 border-ink shadow-sticker">
+                <h3 className="font-display uppercase text-ink text-sm tracking-wider mb-3">
+                  Technologies &amp; Tools
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {project.tools.map((tool, i) => (
+                    <span
+                      key={i}
+                      className="font-body text-xs font-bold bg-white text-ink px-3 py-1.5 rounded-full border border-ink shadow-sm"
+                    >
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Action Buttons Box */}
+              <div className="p-5 rounded-3xl bg-white border-2 border-ink shadow-sticker space-y-3">
+                <h3 className="font-display uppercase text-ink text-xs tracking-wider mb-2">
+                  Project Actions
+                </h3>
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-accent text-white font-display text-xs uppercase tracking-wider rounded-full border-2 border-ink shadow-sticker hover:bg-pop hover:text-ink transition-all"
                   >
-                    {tool}
-                  </span>
-                ))}
+                    <ExternalLink className="w-3.5 h-3.5" />
+                    <span>Open Live Demo</span>
+                  </a>
+                )}
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full flex items-center justify-center gap-2 px-4 py-2.5 bg-white text-ink font-display text-xs uppercase tracking-wider rounded-full border-2 border-ink shadow-sticker hover:bg-soft transition-all"
+                  >
+                    <Github className="w-3.5 h-3.5 text-accent" />
+                    <span>View Repository</span>
+                  </a>
+                )}
               </div>
             </div>
           </div>
