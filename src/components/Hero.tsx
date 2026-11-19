@@ -192,7 +192,7 @@ export const Hero: React.FC = () => {
         aria-hidden="true"
         className="relative z-40 flex flex-col items-center justify-center text-center px-4 w-full select-none pointer-events-none"
       >
-        <div className="font-display font-black text-ink text-[clamp(64px,12vw,160px)] leading-[0.72] tracking-[-0.09em] uppercase flex flex-col items-center justify-center m-0 p-0 drop-shadow-sm">
+        <div className="font-display font-black text-ink text-[clamp(72px,13.5vw,180px)] leading-[0.72] tracking-[-0.09em] uppercase flex flex-col items-center justify-center m-0 p-0 drop-shadow-sm">
           <div className="overflow-hidden py-1">
             <span className="inline-block">{renderLetters('PORT')}</span>
           </div>
@@ -207,7 +207,7 @@ export const Hero: React.FC = () => {
         </h2>
 
         {/* Hybrid Supporting Value Proposition */}
-        <p className="font-body text-xs sm:text-[13px] md:text-sm text-[#2A2A2A] font-medium max-w-xl mx-auto mt-2.5 sm:mt-3 leading-relaxed drop-shadow-[1px_1px_0px_#ffffff] pointer-events-auto px-4">
+        <p className="font-body text-xs sm:text-sm md:text-[15px] text-[#2A2A2A] font-medium max-w-xl mx-auto mt-2.5 sm:mt-3 leading-relaxed drop-shadow-[1px_1px_0px_#ffffff] pointer-events-auto px-4">
           Building scalable web applications, cross-platform mobile apps, and robust backend systems — turning complex ideas into production-ready digital products with React, TypeScript, Node.js, and React Native.
         </p>
 
