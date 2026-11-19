@@ -5,6 +5,7 @@ import { PlasticOverlay } from './PlasticOverlay';
 import { Sticker } from './Sticker';
 import { useIsMobile } from '../hooks/useIsMobile';
 import { FileDown } from 'lucide-react';
+import { handleNavClick } from '../utils/navigation';
 
 export const Hero: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -172,7 +173,8 @@ export const Hero: React.FC = () => {
 
       <div className="absolute top-6 right-6 z-30 flex items-center gap-2">
         <a
-          href="#projects"
+          href="/projects"
+          onClick={(e) => handleNavClick(e, 'projects')}
           className="font-display text-xs uppercase tracking-wider bg-pop text-ink px-4 py-1.5 rounded-full border-2 border-ink shadow-sticker hover:bg-accent hover:text-white transition-colors"
         >
           Explore Work ↓
@@ -212,7 +214,8 @@ export const Hero: React.FC = () => {
         {/* Action CTAs: Explore Projects + Download Resume + Contact */}
         <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mt-3 sm:mt-4 pointer-events-auto">
           <a
-            href="#projects"
+            href="/projects"
+            onClick={(e) => handleNavClick(e, 'projects')}
             className="font-display text-[10px] sm:text-xs uppercase tracking-wider bg-accent text-white px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full border-2 border-ink shadow-sticker hover:bg-pop hover:text-ink hover:-translate-y-0.5 transition-all"
           >
             Explore Projects ↓
@@ -226,7 +229,8 @@ export const Hero: React.FC = () => {
             <span>Resume (PDF)</span>
           </a>
           <a
-            href="#contact"
+            href="/contact"
+            onClick={(e) => handleNavClick(e, 'contact')}
             className="font-display text-[10px] sm:text-xs uppercase tracking-wider bg-pop text-ink px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full border-2 border-ink shadow-sticker hover:bg-accent hover:text-white hover:-translate-y-0.5 transition-all"
           >
             Let&apos;s Talk ⚡

@@ -4,6 +4,7 @@ import { gsap } from '../lib/gsap';
 import { resumeData } from '../data/resume';
 import { Instagram, Mail, Linkedin, Globe, Sparkles } from 'lucide-react';
 import { Sticker } from './Sticker';
+import { handleNavClick } from '../utils/navigation';
 
 export const About: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -205,7 +206,8 @@ export const About: React.FC = () => {
                 <span>📄 Download Resume</span>
               </a>
               <a
-                href="#projects"
+                href="/projects"
+                onClick={(e) => handleNavClick(e, 'projects')}
                 className="inline-flex items-center gap-1.5 px-4 py-2 bg-white text-ink font-display text-xs uppercase tracking-wider rounded-full border-2 border-ink shadow-sticker hover:bg-soft transition-all"
               >
                 <span>🚀 View 6 Live Projects ↓</span>

@@ -1,25 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Sparkles } from 'lucide-react';
+import { handleNavClick } from '../utils/navigation';
 
 export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
+  const lastPathRef = useRef<string>('/');
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 80);
 
       const sections = ['about', 'resume', 'projects', 'contact'];
-      const scrollPos = window.scrollY + 200;
+      const scrollPos = window.scrollY + 250;
 
+      let current = 'hero';
       for (let i = sections.length - 1; i >= 0; i--) {
         const el = document.getElementById(sections[i]);
         if (el && el.offsetTop <= scrollPos) {
-          setActiveSection(sections[i]);
-          return;
+          current = sections[i];
+          break;
         }
       }
-      setActiveSection('hero');
+
+      setActiveSection(current);
+
+      // Cleanly update URL bar without '#' during scroll
+      const cleanPath = current === 'hero' ? '/' : `/${current}`;
+      if (window.location.pathname !== cleanPath && lastPathRef.current !== cleanPath) {
+        lastPathRef.current = cleanPath;
+        window.history.replaceState(null, '', cleanPath);
+      }
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -36,7 +47,8 @@ export const Navbar: React.FC = () => {
       <div className="bg-bg/90 backdrop-blur-md border-2 border-ink shadow-sticker rounded-full px-3 sm:px-6 py-2 flex items-center justify-between gap-2 sm:gap-4">
         {/* Brand / Logo */}
         <a
-          href="#"
+          href="/"
+          onClick={(e) => handleNavClick(e, '/')}
           className="font-display font-black text-xs sm:text-sm tracking-tight text-ink uppercase hover:text-primary transition-colors flex items-center gap-1.5"
           aria-label="Home"
         >
@@ -48,7 +60,8 @@ export const Navbar: React.FC = () => {
         {/* Section Links */}
         <div className="flex items-center gap-1 sm:gap-2">
           <a
-            href="#about"
+            href="/about"
+            onClick={(e) => handleNavClick(e, 'about')}
             className={`font-display text-[11px] sm:text-xs uppercase tracking-wider px-2 sm:px-3 py-1 rounded-full transition-all ${
               activeSection === 'about'
                 ? 'bg-ink text-white shadow-sm'
@@ -58,7 +71,8 @@ export const Navbar: React.FC = () => {
             About
           </a>
           <a
-            href="#projects"
+            href="/projects"
+            onClick={(e) => handleNavClick(e, 'projects')}
             className={`font-display text-[11px] sm:text-xs uppercase tracking-wider px-2 sm:px-3 py-1 rounded-full transition-all ${
               activeSection === 'projects'
                 ? 'bg-ink text-white shadow-sm'
@@ -68,7 +82,8 @@ export const Navbar: React.FC = () => {
             Projects
           </a>
           <a
-            href="#resume"
+            href="/resume"
+            onClick={(e) => handleNavClick(e, 'resume')}
             className={`font-display text-[11px] sm:text-xs uppercase tracking-wider px-2 sm:px-3 py-1 rounded-full transition-all ${
               activeSection === 'resume'
                 ? 'bg-ink text-white shadow-sm'
@@ -78,7 +93,8 @@ export const Navbar: React.FC = () => {
             Resume
           </a>
           <a
-            href="#contact"
+            href="/contact"
+            onClick={(e) => handleNavClick(e, 'contact')}
             className={`font-display text-[11px] sm:text-xs uppercase tracking-wider px-2 sm:px-3 py-1 rounded-full transition-all ${
               activeSection === 'contact'
                 ? 'bg-ink text-white shadow-sm'
@@ -91,7 +107,8 @@ export const Navbar: React.FC = () => {
 
         {/* Quick Action Button */}
         <a
-          href="#contact"
+          href="/contact"
+          onClick={(e) => handleNavClick(e, 'contact')}
           className="font-display text-[10px] sm:text-xs font-bold uppercase tracking-wider px-3 py-1.5 bg-accent text-white rounded-full border-2 border-ink shadow-sticker hover:bg-pop hover:text-ink transition-all flex items-center gap-1"
         >
           <Sparkles className="w-3 h-3" />
