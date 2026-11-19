@@ -46,7 +46,7 @@ export const SkillsPills: React.FC = () => {
         </div>
 
         {/* 6 Category Cards Grid */}
-        <div className="space-y-3.5">
+        <div className="space-y-4">
           {resumeData.categories.map((cat, i) => (
             <div
               key={i}
@@ -55,26 +55,26 @@ export const SkillsPills: React.FC = () => {
               }`}
             >
               {/* Category Header */}
-              <div className="flex items-center justify-between gap-2 mb-1.5">
-                <h5 className="font-display uppercase text-ink text-xs sm:text-sm font-black tracking-wide">
+              <div className="flex items-center justify-between gap-2 mb-2">
+                <h5 className="font-display uppercase text-ink text-sm sm:text-base font-black tracking-wide">
                   {cat.title}
                 </h5>
-                <span className="text-[10px] font-display font-bold uppercase tracking-wider bg-pop text-ink px-2 py-0.5 rounded-full border border-ink shadow-sm">
+                <span className="text-[10px] sm:text-xs font-display font-bold uppercase tracking-wider bg-pop text-ink px-2.5 py-0.5 rounded-full border border-ink shadow-sm">
                   {cat.badge}
                 </span>
               </div>
 
-              {/* Meaningful Contextual Description */}
-              <p className="font-body text-xs text-[#2A2A2A] mb-3 leading-snug">
+              {/* Meaningful Contextual Description - Increased Font Size */}
+              <p className="font-body text-sm sm:text-[15px] font-medium text-[#1A1A1A] mb-3.5 leading-relaxed">
                 {cat.description}
               </p>
 
               {/* Individual Skill Pills */}
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-wrap gap-1.5 sm:gap-2">
                 {cat.skills.map((skill, sIdx) => (
                   <span
                     key={sIdx}
-                    className="skill-pill inline-block px-2.5 py-1 bg-white border border-ink rounded-full text-xs font-body font-bold text-ink shadow-[1.5px_1.5px_0px_#1A1A1A] hover:bg-pop transition-colors cursor-default"
+                    className="skill-pill inline-block px-3 py-1 bg-white border border-ink rounded-full text-xs sm:text-[13px] font-body font-bold text-ink shadow-[1.5px_1.5px_0px_#1A1A1A] hover:bg-pop transition-colors cursor-default"
                   >
                     {skill}
                   </span>
