@@ -123,7 +123,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           className="w-full h-full object-cover object-center filter contrast-[1.02]"
           loading="lazy"
           width={600}
-          height={400}
+          height={450}
         />
 
         {/* Vintage Printed Texture overlay inside card */}

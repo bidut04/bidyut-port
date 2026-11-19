@@ -410,6 +410,8 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                           alt={`${project.title} - Screen ${i + 1}`}
                           className="w-full h-full object-contain filter contrast-[1.02]"
                           loading="lazy"
+                          width={458}
+                          height={1024}
                         />
                       </div>
                     </div>
@@ -445,6 +447,8 @@ export const ProjectDetail: React.FC<ProjectDetailProps> = ({
                       alt={`${project.title} - Detail ${i + 1}`}
                       className="max-h-[320px] max-w-full object-contain filter drop-shadow-md"
                       loading="lazy"
+                      width={800}
+                      height={500}
                     />
                   </div>
                 ))}

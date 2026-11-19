@@ -1,11 +1,23 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { useGSAP } from '@gsap/react';
 import { gsap } from '../lib/gsap';
 import { projectsData, Project } from '../data/projects';
 import { ProjectCard } from './ProjectCard';
-import { ProjectDetail } from './ProjectDetail';
-import { HandsTransition } from './HandsTransition';
 import { Sticker } from './Sticker';
+
+// Dynamically code-split heavy interactive modals and 2D canvas particle physics
+const HandsTransition = React.lazy(() =>
+  import('./HandsTransition').then((m) => ({ default: m.HandsTransition }))
+);
+const ProjectDetail = React.lazy(() =>
+  import('./ProjectDetail').then((m) => ({ default: m.ProjectDetail }))
+);
+
+// Predictive preloader to pre-fetch chunks on hover / section entry with 0ms click latency
+const preloadProjectAssets = () => {
+  import('./HandsTransition');
+  import('./ProjectDetail');
+};
 
 export const ProjectsGrid: React.FC = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -15,6 +27,25 @@ export const ProjectsGrid: React.FC = () => {
   const [pendingProject, setPendingProject] = useState<Project | null>(null);
   const [isTransitionActive, setIsTransitionActive] = useState<boolean>(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  // Preload chunks when user scrolls into the projects section
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0]?.isIntersecting) {
+          preloadProjectAssets();
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '200px' }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   const handleSelectProject = (project: Project) => {
     setPendingProject(project);
@@ -143,7 +174,10 @@ export const ProjectsGrid: React.FC = () => {
         </div>
 
         {/* 3x3 Project Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12"
+          onMouseEnter={preloadProjectAssets}
+        >
           {projectsData.map((project, index) => (
             <ProjectCard
               key={project.id}
@@ -156,21 +190,29 @@ export const ProjectsGrid: React.FC = () => {
 
       </div>
 
-      {/* Cinematic Michelangelo Hands-Touch Transition */}
-      <HandsTransition
-        isActive={isTransitionActive}
-        onComplete={handleTransitionComplete}
-        onCancel={handleTransitionCancel}
-      />
+      {/* Cinematic Michelangelo Hands-Touch Transition (Lazy Loaded) */}
+      {isTransitionActive && (
+        <React.Suspense fallback={null}>
+          <HandsTransition
+            isActive={isTransitionActive}
+            onComplete={handleTransitionComplete}
+            onCancel={handleTransitionCancel}
+          />
+        </React.Suspense>
+      )}
 
-      {/* Full Screen Project Detail Experience */}
-      <ProjectDetail
-        project={selectedProject}
-        onClose={() => {
-          setSelectedProject(null);
-          setPendingProject(null);
-        }}
-      />
+      {/* Full Screen Project Detail Experience (Lazy Loaded) */}
+      {selectedProject && (
+        <React.Suspense fallback={null}>
+          <ProjectDetail
+            project={selectedProject}
+            onClose={() => {
+              setSelectedProject(null);
+              setPendingProject(null);
+            }}
+          />
+        </React.Suspense>
+      )}
     </section>
   );
 };

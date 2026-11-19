@@ -248,6 +248,7 @@ export const Hero: React.FC = () => {
         rotation={-12}
         depth={0.8}
         boundsRef="#hero-container"
+        loading="eager"
         className="top-[10%] left-[4%] sm:left-[8%] md:left-[10%] z-20"
       />
 
@@ -260,6 +261,7 @@ export const Hero: React.FC = () => {
         rotation={14}
         depth={1.2}
         boundsRef="#hero-container"
+        loading="eager"
         className="top-[12%] right-[4%] sm:right-[10%] z-20"
       />
 
@@ -272,6 +274,7 @@ export const Hero: React.FC = () => {
         rotation={-8}
         depth={0.5}
         boundsRef="#hero-container"
+        loading="eager"
         className="top-[46%] left-[3%] sm:left-[6%] z-20"
       />
 
@@ -284,6 +287,7 @@ export const Hero: React.FC = () => {
         rotation={9}
         depth={1.0}
         boundsRef="#hero-container"
+        loading="eager"
         className="bottom-[8%] left-[6%] sm:left-[12%] z-20"
       />
 
@@ -296,6 +300,7 @@ export const Hero: React.FC = () => {
         rotation={-10}
         depth={0.9}
         boundsRef="#hero-container"
+        loading="eager"
         className="bottom-[8%] right-[6%] sm:right-[12%] z-20"
       />
 
@@ -311,6 +316,7 @@ export const Hero: React.FC = () => {
             rotation={12}
             depth={1.1}
             boundsRef="#hero-container"
+            loading="eager"
             className="top-[45%] right-[5%] z-20"
           />
 
@@ -323,6 +329,7 @@ export const Hero: React.FC = () => {
             rotation={-5}
             depth={0.4}
             boundsRef="#hero-container"
+            loading="eager"
             className="top-[8%] left-[44%] z-20"
           />
 
@@ -335,6 +342,7 @@ export const Hero: React.FC = () => {
             rotation={8}
             depth={0.7}
             boundsRef="#hero-container"
+            loading="eager"
             className="bottom-[4%] left-[46%] z-20"
           />
 
@@ -347,6 +355,7 @@ export const Hero: React.FC = () => {
             rotation={-7}
             depth={0.6}
             boundsRef="#hero-container"
+            loading="eager"
             className="top-[28%] right-[18%] z-20"
           />
         </>
