@@ -53,10 +53,10 @@ export const projectsData: Project[] = [
   {
     id: 'travel-flight-book',
     number: '02',
-    title: 'Travel Booking',
-    category: 'Tours, Flights & Hotel Booking Platform',
-    summary: 'Modern travel booking platform featuring interactive tour packages, flight reservations, hotel bookings, and an integrated AI travel assistant.',
-    description: 'An intuitive, modern travel booking web application featuring interactive tour packages, flight reservations, hotel bookings, destination showcases, and an integrated AI assistant (Taxidia AI). Built with clean responsive design, card carousels, and real-time travel exploration.',
+    title: 'Travel & Flight Booking App',
+    category: 'Tours, Flights & Hotel Travel Booking Platform',
+    summary: 'Modern React travel booking app featuring interactive tour packages, flight reservations, hotel stays, destination showcases, and an integrated AI travel assistant.',
+    description: 'An intuitive, modern React travel booking app featuring interactive tour packages, flight reservations, hotel bookings, destination showcases, and an integrated AI travel assistant (Taxidia AI). Built with clean responsive design, card carousels, and real-time travel booking exploration.',
     problem: 'Travel websites often overwhelm users with cluttered, fragmented booking steps. Taxidia streamlines the journey with intuitive package discovery, real-time pricing cards, and interactive destination guides.',
     features: [
       'Multi-category reservation flow (flights, hotels, tours)',
@@ -66,7 +66,7 @@ export const projectsData: Project[] = [
       'Mobile-first responsive booking interface'
     ],
     contribution: 'Built the end-to-end responsive frontend architecture, developed reusable booking card components, integrated asynchronous search filtering, and deployed to Netlify with continuous CI/CD.',
-    keywords: ['Travel Booking Web App', 'Flight Reservation React', 'Interactive Booking Platform', 'Tailwind Travel UI'],
+    keywords: ['Travel Booking App', 'React Travel Booking App', 'Flight Reservation React', 'Interactive Travel Platform', 'Tailwind Travel UI'],
     thumbnail: '/images/projects/project-travel.jpg',
     gallery: [
       '/images/projects/project-travel.jpg',
@@ -83,10 +83,10 @@ export const projectsData: Project[] = [
   {
     id: 'agomoni-sangha',
     number: '03',
-    title: 'Agomoni Sangha',
-    category: 'Cultural Festival & Event Platform',
-    summary: 'Culturally rich digital portal for Bengal\'s Durga Puja featuring real-time festival countdowns, schedule tracking, and online donation processing.',
-    description: 'A vibrant, culturally rich web portal dedicated to Bengal\'s grandest festival, Durga Puja. Features real-time countdown clocks, festival schedules, pandal discovery, cultural competition registrations, online donation (Chanda) integration, and an embedded devotional theme music player.',
+    title: 'Agomoni Sangha — Cultural Utsab Portal',
+    category: 'Durga Puja & Cultural Utsab Platform',
+    summary: 'Culturally rich digital portal for Bengal\'s Durga Puja utsab featuring real-time festival countdowns, utsab schedules, and online donation processing.',
+    description: 'A vibrant, culturally rich web portal dedicated to Bengal\'s grandest cultural festival and Durga Puja utsab. Features real-time utsab countdown clocks, festival schedules, pandal discovery, cultural competition registrations, online digital Chanda donation integration, and an embedded devotional theme music player.',
     problem: 'Large-scale cultural festivals struggle with centralized information dissemination for pandal visitors, registration management, and transparent digital donation collection.',
     features: [
       'Live real-time festival countdown clocks (days, hours, mins, secs)',
@@ -96,7 +96,7 @@ export const projectsData: Project[] = [
       'Embedded HTML5 devotional theme music player with persistent state'
     ],
     contribution: 'Engineered the responsive festival portal, built persistent state management for cultural registrations, integrated an embedded HTML5 audio player with background playback, and optimized media delivery for mobile bandwidth.',
-    keywords: ['Durga Puja Portal', 'Festival Event Management Web App', 'Donation Chanda Platform', 'React Cultural Portal'],
+    keywords: ['Utsab', 'Cultural Utsab Portal', 'Durga Puja Portal', 'Festival Event Management Web App', 'Donation Chanda Platform', 'React Cultural Portal'],
     thumbnail: '/images/projects/project-agomoni.jpg',
     gallery: [
       '/images/projects/project-agomoni.jpg',
@@ -143,10 +143,10 @@ export const projectsData: Project[] = [
   {
     id: 'solarnext-energy',
     number: '05',
-    title: 'SolarNext Energy',
-    category: 'CleanTech & Energy Engineering Platform',
-    summary: 'CleanTech web platform engineered for commercial and residential solar installations, real-time plant telemetry monitoring, and ROI estimation.',
-    description: 'A modern clean-energy web platform engineered for solar power installations, smart telemetry monitoring, and savings estimation. Features real-time plant telemetry metrics, interactive solar ROI calculators, instant consultation booking, and commercial project showcases.',
+    title: 'SolarNext — Solar Energy & CleanTech Platform',
+    category: 'Solar Energy Engineering & CleanTech Platform',
+    summary: 'Renewable solar energy platform with active solar plant telemetry monitoring (50.4 MW output, 98.9% efficiency), interactive solar ROI calculator, and clean energy consultation bookings.',
+    description: 'A modern solar energy platform engineered for commercial and residential solar installations, smart solar telemetry monitoring, and savings estimation. Features real-time solar plant telemetry metrics, an interactive solar ROI calculator, instant consultation booking, and renewable energy project showcases.',
     problem: 'Prospective solar customers struggle to calculate cost savings and visualize production yield, resulting in low conversion rates for renewable energy engineering firms.',
     features: [
       'Active plant telemetry metrics (50.4 MW output, 98.9% efficiency, 74k T CO2 offset)',
@@ -156,7 +156,7 @@ export const projectsData: Project[] = [
       'Responsive design with dynamic telemetry indicators'
     ],
     contribution: 'Developed the mathematical ROI estimation algorithms, engineered real-time telemetry dashboard widgets with dynamic indicators, and built responsive lead-generation forms with validation.',
-    keywords: ['Solar Energy Web App', 'CleanTech Platform', 'Solar ROI Calculator', 'Renewable Energy Telemetry Dashboard'],
+    keywords: ['Solar', 'Solar Energy Platform', 'Solar Telemetry', 'Solar ROI Calculator', 'CleanTech Platform', 'Renewable Solar Energy'],
     thumbnail: '/images/projects/project-solarnext.jpg',
     gallery: [
       '/images/projects/project-solarnext.jpg',

@@ -183,7 +183,7 @@ export const Hero: React.FC = () => {
 
       {/* Primary Semantic H1 for SEO Search Engines & Accessibility */}
       <h1 className="sr-only">
-        Bidyut Kumar Bhowmick — Full-Stack Web &amp; Mobile Developer
+        Bidyut Kumar Bhowmick — React &amp; Full-Stack Web &amp; Mobile Developer
       </h1>
 
       {/* Giant Typography Centerpiece */}
@@ -203,12 +203,12 @@ export const Hero: React.FC = () => {
 
         {/* Script subtitle overlapping the typography - in front of all stickers */}
         <h2 className="font-script text-primary text-2xl sm:text-4xl md:text-5xl -mt-4 sm:-mt-8 md:-mt-10 z-50 drop-shadow-[3px_3px_0px_#ffffff] rotate-[-4deg] pointer-events-auto">
-          Full-Stack Web &amp; Mobile Developer
+          React &amp; Full-Stack Web &amp; Mobile Developer
         </h2>
 
         {/* Hybrid Supporting Value Proposition */}
         <p className="font-body text-xs sm:text-sm md:text-[15px] text-[#2A2A2A] font-medium max-w-xl mx-auto mt-2.5 sm:mt-3 leading-relaxed drop-shadow-[1px_1px_0px_#ffffff] pointer-events-auto px-4">
-          Building scalable web applications, cross-platform mobile apps, and robust backend systems — turning complex ideas into production-ready digital products with React, TypeScript, Node.js, and React Native.
+          React &amp; Full-Stack Developer building scalable web applications, cross-platform mobile apps, and robust backend systems — turning complex ideas into production-ready digital products with React, TypeScript, Node.js, and React Native.
         </p>
 
         {/* Action CTAs: Explore Projects + Download Resume + Contact */}

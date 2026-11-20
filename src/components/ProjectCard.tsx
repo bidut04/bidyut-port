@@ -106,8 +106,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             {project.title}
           </h3>
         </div>
-        <p className="font-body text-xs sm:text-sm text-muted italic line-clamp-1 mt-0.5">
+        <p className="font-body text-xs sm:text-sm text-primary font-semibold italic line-clamp-1 mt-0.5">
           {project.category}
+        </p>
+        {/* Directly Rendered Project Summary in initial DOM for SEO & Crawlers */}
+        <p className="font-body text-xs sm:text-[13px] text-[#2A2A2A] line-clamp-2 mt-1.5 leading-relaxed font-medium">
+          {project.summary || project.description}
         </p>
       </div>
 
