@@ -1,0 +1,28 @@
+# Bidyut Kumar Bhowmick
+
+> Full Stack & Mobile Developer based in West Bengal, India, building web applications, cross-platform mobile apps, APIs, and custom digital products with React, Next.js, TypeScript, Node.js, Express.js, React Native, Expo, PostgreSQL, MySQL, and Prisma ORM.
+
+Bidyut Kumar Bhowmick is available for full-time engineering roles, freelance builds, custom websites, CRMs, and mobile app development. He holds a BCA from Bengal Institute of Technology & Management (BITM) and speaks Bengali (native), English (professional working proficiency), and Hindi (conversational).
+
+## Core Stack
+- Frontend & Mobile: React.js, Next.js, TypeScript, JavaScript, React Native, Expo, Tailwind CSS, GSAP, TanStack Query, HTML5 & CSS3
+- Backend & Databases: Node.js, Express.js, REST API Development, JWT Authentication, PostgreSQL, MySQL, Oracle Database, Prisma ORM
+- Tooling & Version Control: Git, GitHub
+
+## Featured Work & Portfolio
+- [Portfolio Home](https://bidyut-port-6dmw.vercel.app/): Overview of experience, technical skills, education, and featured projects.
+- [GitHub Profile (@bidut04)](https://github.com/bidut04): Code repositories and engineering projects.
+- [LinkedIn Profile](https://www.linkedin.com/in/bidyut-kumar-bhowmick/): Professional background and network.
+
+## Notable Projects Highlighted on Portfolio
+- Retro Portfolio: Full-stack and creative web application.
+- Travel Booking: Tours, flights, and hotel booking platform.
+- Agomoni Sangha: Cultural festival and event platform with custom audio and animations.
+- Dev Docs: Developer platform and documentation system.
+- SolarNext Energy: CleanTech and energy engineering platform.
+- Journey Fleet App: Cross-platform mobile application for iOS and Android built with React Native / Expo.
+
+## Contact
+- Email: barunbhowmick727@gmail.com
+- Location: West Bengal, India
+- Availability: Available for hire and freelance/custom project inquiries.
