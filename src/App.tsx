@@ -6,6 +6,7 @@ import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Resume } from './components/Resume';
 import { ProjectsGrid } from './components/ProjectsGrid';
+import { FAQ } from './components/FAQ';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { scrollToSection } from './utils/navigation';
@@ -70,7 +71,10 @@ export function App() {
         {/* Section 04: Projects Grid & Project Detail */}
         <ProjectsGrid />
 
-        {/* Section 05: Contact ("Let's work together") */}
+        {/* Section 05: Direct-Answer FAQ / Knowledge Base for AEO & GEO */}
+        <FAQ />
+
+        {/* Section 06: Contact ("Let's work together") */}
         <Contact />
       </main>
 

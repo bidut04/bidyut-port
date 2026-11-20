@@ -115,7 +115,7 @@ export const projectsData: Project[] = [
     number: '04',
     title: 'Dev Docs',
     category: 'Developer Platform & Documentation System',
-    summary: 'All-in-one developer documentation and knowledge platform combining tech stack guides, code libraries, and instant search.',
+    summary: 'All-in-one developer documentation and reference knowledgebase centralizing modern tech stack guides, syntax cheat sheets, and API libraries. Built with React, TypeScript, and Tailwind CSS. Features sub-millisecond client-side fuzzy search, high-contrast dark mode, and 1-click syntax-highlighted code blocks.',
     description: 'An all-in-one developer documentation and knowledge platform combining tech stack guides, interactive libraries, and productivity tools. Built with a sleek dark aesthetic, emerald neon accents, instant search, and responsive code reference layouts.',
     problem: 'Developers lose productive hours navigating disparate, slow documentation across fragmented library repositories. Dev Docs centralizes developer guides and syntax references in a low-latency, dark-mode platform.',
     features: [
@@ -145,7 +145,7 @@ export const projectsData: Project[] = [
     number: '05',
     title: 'SolarNext — Solar Energy & CleanTech Platform',
     category: 'Solar Energy Engineering & CleanTech Platform',
-    summary: 'Renewable solar energy platform with active solar plant telemetry monitoring (50.4 MW output, 98.9% efficiency), interactive solar ROI calculator, and clean energy consultation bookings.',
+    summary: 'CleanTech solar energy platform engineered for commercial and residential installations, active solar plant telemetry monitoring (50.4 MW output, 98.9% efficiency, 74k T CO2 offset), and mathematical ROI estimation. Built with React, TypeScript, and Tailwind CSS. Features real-time telemetry dashboards, interactive solar savings calculators, and automated consultation scheduling.',
     description: 'A modern solar energy platform engineered for commercial and residential solar installations, smart solar telemetry monitoring, and savings estimation. Features real-time solar plant telemetry metrics, an interactive solar ROI calculator, instant consultation booking, and renewable energy project showcases.',
     problem: 'Prospective solar customers struggle to calculate cost savings and visualize production yield, resulting in low conversion rates for renewable energy engineering firms.',
     features: [
@@ -175,7 +175,7 @@ export const projectsData: Project[] = [
     number: '06',
     title: 'Journey Fleet App',
     category: 'Mobile Application (iOS & Android)',
-    summary: 'Native-performance mobile application for intercity bus ticketing, seat reservations, and private whole-fleet mountain charters.',
+    summary: 'Cross-platform mobile passenger reservation app for intercity bus ticketing, luxury sleeper berths, and private full-fleet mountain charters. Built with React Native, Expo, TypeScript, and Tailwind CSS. Engineered fluid gesture navigation, responsive device mockups, and real-time fleet reservation workflows.',
     description: 'An intuitive, modern bus booking and fleet charter mobile application. Features real-time trending fleet exploration, luxury coach & sleeper seat reservation, private full-fleet mountain charters, and seamless passenger booking workflows.',
     problem: 'Regional passenger transport requires flexible booking flows that accommodate individual seat reservations on scheduled routes alongside bespoke, whole-vehicle private fleet charters.',
     features: [
